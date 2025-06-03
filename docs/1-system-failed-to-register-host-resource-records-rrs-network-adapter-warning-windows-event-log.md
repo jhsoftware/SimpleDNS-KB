@@ -20,4 +20,5 @@ This is enabled in the Zone Properties dialog / Dynamic Updates tab:
 
 ![Zone Properties dialog](img/1/2.png)
 
-> [!Important] Make sure to only allow standard dynamic updates from trusted IP addresses.
+> [!Caution]
+> Make sure to only allow standard dynamic updates from trusted IP addresses.

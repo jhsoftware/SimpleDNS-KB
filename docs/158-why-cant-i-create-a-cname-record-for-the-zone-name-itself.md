@@ -21,5 +21,6 @@ Instead of the CNAME-record, you can setup an A-record pointing directly to the 
 
 Or you can use an [ALIAS-record](/kb/2/alias-records-auto-resolved-alias) which is similar to CNAME but doesn't have the problem mentioned above.
 
-> [!Note] While certain other DNS servers may allow you to configure such a CNAME-record, it is still an error to do so.
+> [!Note]
+> While certain other DNS servers may allow you to configure such a CNAME-record, it is still an error to do so.
 > The results of this are unpredictable, and often causes serious problems because in some situations the CNAME-record will override other critical records at the zone root level - for example hiding the NS- and SOA-records.

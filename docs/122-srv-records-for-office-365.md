@@ -21,7 +21,8 @@ In Simple DNS Plus, adding these records would look like this:
 
 ![New SRV-record 2](img/122/3.png)
 
-> [!Note] The "Service" and "Protocol" fields are NOT locked to the drop-down choices. You can type any value into these.
+> [!Note]
+> The "Service" and "Protocol" fields are NOT locked to the drop-down choices. You can type any value into these.
 
 And back in the record list:
 

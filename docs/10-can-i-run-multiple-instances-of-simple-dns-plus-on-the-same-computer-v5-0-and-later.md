@@ -37,10 +37,12 @@ C:\>cd "\Program Files\Simple DNS Plus2"
 C:\Program Files\Simple DNS Plus2>\windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe sdnsmain.exe  
 ```
 
-> [!Note] For Simple DNS Plus versions prior to v. 9.0, you need to use the .NET 2.0 version of `InstallUtil.exe`
+> [!Note]
+> For Simple DNS Plus versions prior to v. 9.0, you need to use the .NET 2.0 version of `InstallUtil.exe`
 > found in `c:\windows\Microsoft.NET\Framework\v2.0.50727`.
 
-> [!Note] On Windows 10/11 you will need to run this "As administrator" 
+> [!Note]
+> On Windows 10/11 you will need to run this "As administrator" 
 > (right-click "Command Prompt" shortcut in Start menu and select "Run as administrator"
 > prior to executing above commands). 
 
@@ -55,5 +57,6 @@ The instance ID will also be part of the service description in the Windows Serv
 Simple DNS Plus configuration files for the second instance will be stored in a sub-directory of the application data directory
 `C:\ProgramData\JH Software\Simple DNS Plus\<instance ID>\`  
 
-> [!Note] The user interface, including the tray icon, can only be accessed for one instance at a time. We recommend you disable the tray icon option (Options dialog / General section) for both instances.  
+> [!Note]
+> The user interface, including the tray icon, can only be accessed for one instance at a time. We recommend you disable the tray icon option (Options dialog / General section) for both instances.  
 > To make it easier to access the GUI, you can make a desktop shortcut to "sdnsgui.exe" for each instance ("sdnsplus.exe" for earlier versions).
