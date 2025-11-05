@@ -65,6 +65,7 @@ If you place one of the following tags following the first ">", the whole blockq
 | --- | --- |
 | `[!Note]`      | Light blue callout with "Note" header. For information without any special emphasis.| 
 | `[!Tip]`       | Green callout with "Tip" header. For special tips and tricks or other helpful knowledge. | 
+| `[!Important]`   | Yellow callout with "Important" header. Warn readers about situations that could cause data loss or unexpected consequences. |
 | `[!Warning]`   | Yellow callout with "Warning" header. Warn readers about situations that could cause data loss or unexpected consequences. |
 | `[!Caution]`   | Red callout with "Caution" header. Warn readers about situations that could cause data loss or unexpected consequences. |
 | `[!Remark]` | Not rendered. For authoring remarks about source text. |
