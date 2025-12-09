@@ -47,7 +47,7 @@ Optional properties:
 - **VGroup:** An article version group identifier (fx `WINVER`) that is shared between multiple topic files - enabling an "article version selector" at the top of the page. 
 - **VName:** Article version name/number for this topic (fx `Windows Server 2016`) - will appear in the article version selector (see above).
 - **VSort:** Integer value indicating sort order of this topic in the article version group (see above). 
-- **References:** Comma separated list of topic-IDs (numbers only). Renders as a list of links at the bottom of the page.
+- **Refs:** Comma separated list of topic-IDs (numbers only). Renders as a list of links at the bottom of the page.
 - **Contributors:** Comma separated list of GitHub IDs of contributors  
 - **Notes:** Notes / remarks.
 
