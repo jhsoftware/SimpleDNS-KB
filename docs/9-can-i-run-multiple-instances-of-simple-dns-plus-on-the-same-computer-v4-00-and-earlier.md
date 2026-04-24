@@ -15,9 +15,9 @@ You can specify which IP addresses in the Options dialog / DNS / Inbound Request
 
 Under normal circumstances it wouldn't be necessary to run multiple instances because, to the rest of the Internet, each IP address looks like a different DNS server (easy way to run primary and secondary on one machine).
 
-However it is possible to run multiple instances (from different directories), for example if you want to serve different data to clients on different network segments.
+However, it is possible to run multiple instances (from different directories), for example if you want to serve different data to clients on different network segments.
 
-Just make sure to configure each instance to listen on different local IP addresses, so they won't conflict.  
+Make sure to configure each instance to listen on different local IP addresses, so they won't conflict.  
 If you are going to use the HTTP API, you will also need to make sure that each instance uses different IP addresses or port numbers for this - see Options dialog / HTTP API.
 
 To do this:
@@ -27,7 +27,7 @@ Then copy this whole directory - for example to "C:\Program Files\Simple DNS Plu
 
 Now you can run the second instance from this directory.
 
-The only issue with this is when Simple DNS Plus is running as a Windows services.  
+The only issue with this is when Simple DNS Plus is running as a Windows service.  
 The default service name is "sdnsplus" (NET START SDNSPLUS), and description "Simple DNS Plus" (Shows in the Services list).  
-No two services can have the same name, so to run additional Simple DNS Plus services you need to change the service name (and description) for each additional copy.  
+No two services can have the same name, so to run additional Simple DNS Plus services, you need to change the service name (and description) for each additional copy.  
 You can do this by manually editing the "sdnsplus.ini" file (with Notepad) and changing the "ServiceName" and "ServiceDesc" settings.

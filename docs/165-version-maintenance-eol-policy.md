@@ -7,7 +7,7 @@ modified-utc: 2021-09-02
 ---
 # Version maintenance / End of Life (EOL) policy
 
-We only maintain the lastest version of Simple DNS Plus.
+We only maintain the latest version of Simple DNS Plus.
 
 Whenever we release a new version (major/minor) of Simple DNS Plus, older versions are no longer supported.
 

@@ -14,7 +14,7 @@ This can be used if you manage a large number of IP addresses, and you need to p
 
 The plug-in will respond with reverse DNS records pointing to a synthesized host name in the format &lt;prefix&gt;&lt;ip-address-&gt;&lt;suffix&gt;. Dots and colons in IP addresses are replaces with hyphens, and you can choose to either include the full IP address, or just the right part (as per subnet size).
 
-For example with the prefix "webserver-", the suffix ".example.com", and a DNS request for reverse DNS records for IP address 1.2.3.4 (PTR for "4.3.2.1.in-addr.arpa"), a PTR record pointing to "webserver-1-2-3-4.example.com" would be synthesized.
+For example, with the prefix "webserver-", the suffix ".example.com", and a DNS request for reverse DNS records for IP address 1.2.3.4 (PTR for "4.3.2.1.in-addr.arpa"), a PTR record pointing to "webserver-1-2-3-4.example.com" would be synthesized.
 
 In the plug-in instance dialog / Plug-In Settings tab you can specify the following settings (below image):
 

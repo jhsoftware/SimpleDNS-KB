@@ -15,7 +15,7 @@ If you receive an error message like this when starting Simple DNS Plus:
 
 It may be because the root of your C: drive (or the drive where Simple DNS Plus is installed) contains a file named "program". Or that the "C:\program files\" directory contains a file named "simple".
 
-Or if Simple DNS Plus is installed under another directory with spaces in the the directory name, and a file exists with the same name as the first part of the directory name.
+Or if Simple DNS Plus is installed under another directory with spaces in the directory name, and a file exists with the same name as the first part of the directory name.
 
 To fix this problem, simply delete or rename the mentioned file.
 

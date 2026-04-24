@@ -19,9 +19,9 @@ Many blacklists also contain text strings associated with each blacklist entry -
 E-mail servers can request this text through a DNS TXT-record lookup and log and/or include this in error messages etc.  
 For more details on this concept and its history, please see [this Wikipedia article](http://en.wikipedia.org/wiki/dnsbl){target=_blank}.
 
-Theoretically a DNS blacklist can be hosted as a normal DNS zone with A-records and TXT-records.  
-However a DNS blacklist typically contains thousands and often millions of IP addresses, and the standard DNS zone file format and the normal way of storing DNS records in computer memory is just not efficient for this type of data.  
-This plug-in however is highly optimized for this, and can load a dataset for millions of IP addresses in a fraction of a second using minimal memory, and can query this data extremely efficiently.
+Theoretically, a DNS blacklist can be hosted as a normal DNS zone with A-records and TXT-records.  
+However, a DNS blacklist typically contains thousands and often millions of IP addresses, and the standard DNS zone file format and the normal way of storing DNS records in computer memory is just not efficient for this type of data.  
+This plug-in, however, is highly optimized for this and can load a dataset for millions of IP addresses in a fraction of a second using minimal memory and can query this data extremely efficiently.
 
 You can create your own blacklists with the [DNS Blacklist Editor](/kb/208) tool.  
 If you receive a lot of e-mails and do a lot of DNS blacklist lookups against other blacklists (for example as an ISP), it may also be more efficient to periodically download the full blacklists and host them yourself with this plug-in.

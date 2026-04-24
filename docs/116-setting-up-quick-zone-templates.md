@@ -8,12 +8,12 @@ modified-utc: 2019-01-01
 ---
 # Setting up Quick Zone Templates
 
-In Simple DNS Plus v. 5.0 and later, the "Quick Zone Wizard" (formerly "Quick Domain Wizard") is template based, and supports multiple templates through a drop-down menu on the Quick button.
+In Simple DNS Plus v. 5.0 and later, the "Quick Zone Wizard" (formerly "Quick Domain Wizard") is template-based and supports multiple templates through a drop-down menu on the Quick button.
 
 Making and using your own templates is easy and can be a great help and time saver if you frequently setup new DNS zones.  
-You can use templates for example to ensure company standards are followed, automate which DNS records to add for different customer types, make it easier for novice staff, etc.
+You can use templates, for example, to ensure company standards are followed, automate which DNS records to add for different customer types, make it easier for novice staff, etc.
 
-Templates can simply be static standard RFC based zone files, but they can also become "active" by adding ASP style tags (&lt;%...%&gt;), VB.NET code, and custom input fields.
+Templates can simply be static standard RFC-based zone files, but they can also become "active" by adding ASP style tags (&lt;%...%&gt;), VB.NET code, and custom input fields.
 
 ### Very Simple Templates - Copy, Rename, Done
 

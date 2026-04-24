@@ -19,7 +19,7 @@ If you try to create a CNAME-record for the name of the zone itself, you will al
 
 Instead of the CNAME-record, you can setup an A-record pointing directly to the IP address of whatever server the aliased name is pointing to.
 
-Or you can use an [ALIAS-record](/kb/2/alias-records-auto-resolved-alias) which is similar to CNAME but doesn't have the problem mentioned above.
+Or you can use an [ALIAS-record](/kb/2/alias-records-auto-resolved-alias) which is similar to CNAME but doesn't have the problem mentioned above.
 
 > [!Note]
 > While certain other DNS servers may allow you to configure such a CNAME-record, it is still an error to do so.

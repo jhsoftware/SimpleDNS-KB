@@ -9,7 +9,7 @@ modified-utc: 2019-01-01
 # DynDNS clients supporting TSIG signed updates
 
 Simple DNS Plus supports TSIG signed dynamic updates directly through the DNS protocol.  
-This is the most efficient and recommend way to do dynamic updates.
+This is the most efficient and recommended way to do dynamic updates.
 
 DynDNS client software known to support TSIG signed dynamic DNS updates:
 

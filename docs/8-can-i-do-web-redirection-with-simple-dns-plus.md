@@ -15,6 +15,6 @@ When redirecting with a CNAME record, the web-server will still only "see" the o
 
 Also, a CNAME record can only point to another domain name - not a sub-directory or a specific web-page.
 
-So i f you do not have access to configure the target web-server, or if you want to redirect to a sub-directory or a specific web-page, then you will need to use HTTP redirection instead.  
+So if you do not have access to configure the target web-server, or if you want to redirect to a sub-directory or a specific web-page, then you will need to use HTTP redirection instead.  
 You can do this with the [HTTP Redirector plug-in](https://simpledns.plus/plugin-httpredir) or by some type of server side script on a web-server.
 

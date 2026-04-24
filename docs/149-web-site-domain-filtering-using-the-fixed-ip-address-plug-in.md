@@ -10,7 +10,7 @@ modified-utc: 2019-01-01
 This article describes a simple way to block access to a few web-sites (and make an exception for the manager's PC) using the "Fixed IP Address" plug-in.  
 To block a longer list of sites we recommend using the more advanced [Domain Blacklist plug-in](https://simpledns.plus/plugin-domainbl).
 
-In the Simple DNS Plus main window,click the "Options" button:
+In the Simple DNS Plus main window, click the "Options" button:
 
 ![](img/149/1.png)
 

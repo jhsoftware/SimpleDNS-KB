@@ -14,7 +14,7 @@ This can be enabled/disabled and configured in the Options dialog / DNS / Miscel
 The majority of Internet DNS servers today either fully support EDNS0 or they simply ignore the EDNS0 part of EDNS0 requests and process these requests like any other DNS requests.  
 Previous versions of Simple DNS Plus do the later.
 
-However a few Internet DNS servers, including those currently used by Akamai, will respond with "Format Error" to all EDNS0 request (Akamai is a DNS service provider used by Yahoo! and several other large web-sites).
+However, a few Internet DNS servers, including those currently used by Akamai, will respond with "Format Error" to all EDNS0 requests (Akamai is a DNS service provider used by Yahoo! and several other large web-sites).
 
 When Simple DNS Plus v. 5.0 receives such a "Format Error" in response to an EDNS0 request, it will simply re-send the request without EDNS0 (a standard RFC behavior used by all EDNS0 enabled DNS servers).
 

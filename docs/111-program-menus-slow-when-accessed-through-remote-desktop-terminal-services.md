@@ -7,8 +7,8 @@ modified-utc: 2019-01-01
 ---
 # Program menus slow when accessed through Remote Desktop / Terminal Services
 
-The Simple DNS Plus users interface (GUI) uses transition effects for menus and tool tips (sliding / fading) for nice visual effects when this is enabled in Windows.  
-However if you are accessing the server computer remotely through a slower connection (less than LAN speed) you may want to disable these effects for faster access.
+The Simple DNS Plus user interface (GUI) uses transition effects for menus and tool tips (sliding / fading) for nice visual effects when this is enabled in Windows.  
+However, if you are accessing the server computer remotely through a slower connection (less than LAN speed) you may want to disable these effects for faster access.
 
 Right-click anywhere on the remote desktop and select "Properties" from the popup-menu.
 

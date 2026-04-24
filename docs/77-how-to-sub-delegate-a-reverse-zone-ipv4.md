@@ -11,7 +11,7 @@ modified-utc: 2019-01-01
 ---
 # How to sub-delegate a reverse zone (IPv4)
 
-If for example you are an ISP providing Internet connections to your customers, you can sub-delegate reverse DNS for the IP addresses that you provide to your customers to the customers' own DNS servers.  
+If, for example, you are an ISP providing Internet connections to your customers, you can sub-delegate reverse DNS for the IP addresses that you provide to your customers to the customers' own DNS servers.  
 This makes it possible for your customers to control their own reverse DNS without contacting you every time they need this updated.  
 Typically you would only do this for customers with multiple static IP addresses.  
 For customers with only one IP address or dynamic IP addresses, it usually makes more sense to host the reverse DNS records on your own DNS server.

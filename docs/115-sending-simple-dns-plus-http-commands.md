@@ -16,7 +16,7 @@ The settings related to this are configured in the Options dialog / HTTP API sec
 
 ![](img/115/1.png)
 
-Adjust these settings to match you IP addresses and security requirements.  
+Adjust these settings to match your IP addresses and security requirements.  
 By default it listens on IP 127.0.0.1 which means that connections can only be made from the same computer.
 
 The different "commands" that Simple DNS Plus can accept through the HTTP API are listed and described in the help file "How to use the HTTP API" section. See [on-line version](https://simpledns.plus/helplink?p=ht_http).

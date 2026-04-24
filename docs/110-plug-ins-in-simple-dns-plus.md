@@ -8,7 +8,7 @@ modified-utc: 2021-10-28
 ---
 # Plug-ins in Simple DNS Plus
 
-Simple DNS Plus has a plug-in system for providing additional services (such as DHCP) and for fetching DNS data from various sources such as databases and custom programs and scripts.
+Simple DNS Plus has a plug-in system for providing additional services (such as DHCP) and for fetching DNS data from various sources, such as databases and custom programs and scripts.
 
 A list of available plug-ins is available at <https://simpledns.plus/plugins>
 

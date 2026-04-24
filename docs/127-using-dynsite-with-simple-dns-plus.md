@@ -8,8 +8,8 @@ modified-utc: 2019-01-01
 ---
 # Using DynSite with Simple DNS Plus
 
-<div class="yellowbox">NB: This article was written before we released the [DynDNS Service plug-in](https://simpledns.plus/plugin-dyndns).  
-DynSite can also be used with the DynDNS Service plug-in making it even easier to run a DynDNS service</div>
+> [!NOTE] This article was written before we released the [DynDNS Service plug-in](https://simpledns.plus/plugin-dyndns).  
+> DynSite can also be used with the DynDNS Service plug-in making it even easier to run a DynDNS service
 
 DynSite is a product from Noël Danjou - [http://noeld.com/dynsite.asp](http://noeld.com/dynsite.asp){target=_blank}
 

@@ -7,7 +7,7 @@ modified-utc: 2019-01-01
 ---
 # How to serve a network based Debian Linux installation with Simple DNS Plus
 
-This articles describes how to install Debian Linux over the network (no CDs, floppy-disks, USB keys, etc.) using the [DHCP Server](https://simpledns.plus/plugin-dhcp) and [TFTP Server](https://simpledns.plus/plugin-tftp) plug-ins in Simple DNS Plus (running on a Windows computer).
+This article describes how to install Debian Linux over the network (no CDs, floppy-disks, USB keys, etc.) using the [DHCP Server](https://simpledns.plus/plugin-dhcp) and [TFTP Server](https://simpledns.plus/plugin-tftp) plug-ins in Simple DNS Plus (running on a Windows computer).
 
 This Debian Linux installation is just an example to demonstrate the DHCP/TFTP plug-in combination.  
 Similar procedures can be used to network install or boot other operating systems, or provision IP phones and other devices.

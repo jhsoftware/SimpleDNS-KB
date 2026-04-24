@@ -11,7 +11,7 @@ DNS over TLS (DoT) - or "Private DNS" as it is called in Android - is a way to e
 
 To enable this in Android, do the following.
 
-Note the following screen shots and instructions are taken from a Samsung Galaxy 9 Phone with Android version 10. The steps and settings may be different on other devices / versions.
+Note the following screenshots and instructions are taken from a Samsung Galaxy 9 Phone with Android version 10. The steps and settings may be different on other devices / versions.
 
 From your home screen, locate and click the Settings icon:
 

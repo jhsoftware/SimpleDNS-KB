@@ -18,7 +18,7 @@ Under normal circumstances it wouldn't be necessary to run multiple instances be
 However, it is possible to run multiple instances (from different directories), for example if you want to serve different data to clients on different network segments.
 
 Just make sure to configure each instance to listen on different local IP addresses, so they won't conflict.  
-If you are going to use the HTTP API, you will also need to make sure that each instance uses different IP addresses or port numbers for this - see Options dialog / HTTP API.
+If you are going to use the HTTP API, you will also need to make sure that each instance uses different IP addresses or port numbers for this - see Options dialog / HTTP API.
 
 To do this:
 

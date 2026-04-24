@@ -20,7 +20,7 @@ In the plug-in instance dialog / Plug-In Settings tab you can specify the regula
 
 ![](img/184/1.png)
 
-The sample in the screen shot would match and ignore any requests for domain names containing 'xxx'.
+The sample in the screenshot would match and ignore any requests for domain names containing 'xxx'.
 
 Keep in mind that the dot (.) character has special meaning in regular expressions (matches any character), so when matching multi-segment domains names, the domain name dots must be enclosed in square brackets [.].  
 For example to match exactly "something.example.com", the regular expression would be "^something[.]example[.]com$" without the quotes.  

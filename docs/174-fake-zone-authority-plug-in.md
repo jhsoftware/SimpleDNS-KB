@@ -10,9 +10,9 @@ modified-utc: 2020-01-07
 
 This plug-in allows domain names to pass common tests performed by domain name registrars and similar without having to setup an actual zone for each domain name.
 
-This can be useful for example if you have a lot of domain names that are either served by other plug-ins or are inactive.
+This can be useful, for example, if you have a lot of domain names that are either served by other plug-ins or are inactive.
 
-Specifically, this plug-in provides synthesized SOA- and NS-records indicating that this DNS server is authoritative for whatever name that is requested. Optionally the plug-in will also respond to requests for other record types with a "NO DATA" response (a standard DNS response indicating that no records exist for the request name and type).
+Specifically, this plug-in provides synthesized SOA- and NS-records indicating that this DNS server is authoritative for whatever name that is requested. Optionally, the plug-in will also respond to requests for other record types with a "NO DATA" response (a standard DNS response indicating that no records exist for the request name and type).
 
 On the "Plug-In Settings" tab, specify the following settings (explained below the image):
 

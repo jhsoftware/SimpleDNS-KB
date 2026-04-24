@@ -11,7 +11,7 @@ modified-utc: 2019-01-01
 ---
 # Configuring Windows to use local DNS server (Windows XP)
 
-First Double click the "Network Connections" icon in the Control Panel:  
+First, double-click the "Network Connections" icon in the Control Panel:  
 (Click "Switch to Classic View" if it doesn't look like this)
 
 ![](img/28/1.png)

@@ -13,7 +13,7 @@ This plug-in instructs Simple DNS Plus to ignore (not answer) all DNS requests t
 This can be used to ignore requests from specific IP addresses, for specific domain names, record types, etc.  
 As an example, you could configure it to ignore DNS requests from IP addresses listed by a blacklist plug-in.
 
-IMPORTANT: By default this plug-in instructs Simple DNS Plus to ignore ALL DNS requests, so it is important that it be limited in scope using the "DNS Requests" tab:
+> [!IMPORTANT] By default, this plug-in instructs Simple DNS Plus to ignore ALL DNS requests, so it is important that it be limited in scope using the "DNS Requests" tab:
 
 ![](img/180/1.png)
 

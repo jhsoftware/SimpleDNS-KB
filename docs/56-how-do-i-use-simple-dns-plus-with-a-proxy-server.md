@@ -16,7 +16,7 @@ If the proxy server and Simple DNS Plus are running on the same computer, this m
 Simple DNS Plus may display the message:  
 "Could not start DNS service / port 53 may be in use by another program"
 
-You may be able solve this by configuring Simple DNS Plus to only listen on 127.0.0.1 or an external IP address (see Options dialog / IP addresses).
+You may be able to solve this by configuring Simple DNS Plus to only listen on 127.0.0.1 or an external IP address (see Options dialog / IP addresses).
 
 Or you can disable the DNS function on the proxy server. Most likely you won't need functionality in the proxy server because Simple DNS Plus provides this directly.
 

@@ -10,7 +10,7 @@ modified-utc: 2020-01-08
 
 This plug-in provides simple TCP port forwarding.
 
-If the Simple DNS Plus computer is connected to both the Internet and to a private network (LAN), this can be used to forward connections from the Internet to a computer on the LAN. For example mapping remote desktop connections (port 3389).
+If the Simple DNS Plus computer is connected to both the Internet and to a private network (LAN), this can be used to forward connections from the Internet to a computer on the LAN. For example, mapping remote desktop connections (port 3389).
 
 On the "Plug-In Settings" tab, enter the following settings (explained below the image):
 

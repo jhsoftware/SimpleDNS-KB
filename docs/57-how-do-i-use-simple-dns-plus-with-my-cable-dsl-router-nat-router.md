@@ -18,7 +18,7 @@ So you need to map for incoming traffic to port 53 to be forwarded to the local 
 With some routers you must create two separate mappings - one for each protocol "UDP" and "TCP".  
 Other routers allow you to do this with a single port mapping for "BOTH".
 
-This sample screen shot is from a Linksys router:
+This sample screenshot is from a Linksys router:
 
 ![](img/57/1.png)
 

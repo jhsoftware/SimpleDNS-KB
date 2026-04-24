@@ -11,7 +11,7 @@ modified-utc: 2019-01-01
 ---
 # Configuring Windows to use local DNS server (Windows Server 2003)
 
-First Double click the "Network Connections" icon in the Control Panel:
+First, double-click the "Network Connections" icon in the Control Panel:
 
 ![](img/24/1.png)
 
