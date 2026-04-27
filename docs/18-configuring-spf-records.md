@@ -12,19 +12,19 @@ SPF (Sender Policy Framework) records are used to fight e-mail spam and phishing
 SPF uses DNS TXT-records to define which hosts are permitted to send e-mails for a domain.
 
 This works by defining an SPF-record (a DNS TXT-record) for the e-mail domain name specifying which hosts (e-mail servers) are permitted to send e-mail from the domain name.  
-Other e-mail servers can lookup this record when receiving an e-mail from this domain name to verify that sending e-mail server is connecting from a permitted IP address.
+Other e-mail servers can look up this record when receiving an e-mail from this domain name to verify that sending e-mail server is connecting from a permitted IP address.
 
 Simple DNS Plus comes with a plug-in which can automatically synthesize SPF-records for all domain names hosted
 on your server which do not already have SPF-records - see the [Auto SPF plug-in](/kb/204).
 
-You can also setup SPF-records for individual domain names.  
-For example to create an SPF-record specifying that only those e-mail servers handling inbound e-mail for "example.com" (as specified in MX-records) are allowed to send e-mails from "...@example.com" (fits most setups), you would follow these steps:
+You can also set up SPF-records for individual domain names.  
+For example, to create an SPF-record specifying that only those e-mail servers handling inbound e-mail for "example.com" (as specified in MX-records) are allowed to send e-mails from "...@example.com" (fits most setups), you would follow these steps:
 
-First click the "Records" button in the main window:
+First, click the "Records" button in the main window:
 
 ![](img/18/3.png) 
 
-Then in the DNS Records window, right-click on the zone in the left list, and select "New TXT-record (Text Strings)" from the pop-up menu:
+Then in the DNS Records window, right-click on the zone in the left list and select "New TXT-record (Text Strings)" from the pop-up menu:
 
 ![](img/18/4.png)
 
@@ -39,7 +39,7 @@ You can get the exact text string to enter by using the setup wizard at <http://
 
 In addition to checking the domain name part of the sender's e-mail address, some e-mail servers also perform SPF checks on the SMTP session HELO/EHLO greeting host name.
 
-Therefore always make sure that your e-mail server is configured to use a correct host name (like "mail.example.com") in the HELO/EHLO greeting, and that an A- and/or AAAA-record exists for this host name in DNS.
+Therefore, always make sure that your e-mail server is configured to use a correct host name (like "mail.example.com") in the HELO/EHLO greeting, and that an A- and/or AAAA-record exists for this host name in DNS.
 
 When using the Auto SPF plug-in, make sure that the automatic SPF-record data is also valid for the HELO/EHLO host name, or define a specific SPF-record for the HELO/EHLO name in the zone where this belongs (this will override the automatic SPF record).
 
@@ -52,7 +52,7 @@ Instead you could use "v=spf1 ip4:1.2.3.4 -all" (where 1.2.3.4 is the IP address
 In 2006 a new DNS record type "SPF" (numeric ID 99) was introduced through RFC4408. This record type (and RFC) was made obsolete in 2014 through RFC7372.  
 Since the introduction of the SPF concept, it has always been valid and correct to publish SPF data using DNS TXT-records. Between 2006 and 2014 both record types (TXT / SPF) were valid and correct. However now only TXT-records should be used.  
 All e-mail servers that we know of support SPF through DNS TXT-records.  
-Therefore the DNS "SPF" record type (99) was removed from Simple DNS Plus in v. 5.3.
+Therefore, the DNS "SPF" record type (99) was removed from Simple DNS Plus in v. 5.3.
 
 ### Meaning of "SPF"
 

@@ -7,7 +7,7 @@ modified-utc: 2021-11-01
 ---
 # Can Simple DNS Plus be run as a Windows Service (a.k.a. "NT service")?
 
-Yes Simple DNS Plus v. 5.0 and later always runs as a Windows service - this is not optional.
+Yes, Simple DNS Plus v. 5.0 and later always runs as a Windows service - this is not optional.
 
 In earlier versions of Simple DNS Plus, this is an option which has to be enabled in the Options dialog / General tab.
 

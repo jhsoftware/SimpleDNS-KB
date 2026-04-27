@@ -44,10 +44,10 @@ In Simple DNS Plus such a record would look like this:
 
 ![](img/17/2022-2.png)
 
-The selector value ("newyork" in above example) may be a fixed value used by your e-mail server software, or you may be able to configure multiple selectors for example for different branch offices or individual e-mail servers.  
-The important thing is that for each selector used to sign outgoing messages from your domain name, you setup a separate TXT-record in DNS.
+The selector value ("newyork" in above example) may be a fixed value used by your e-mail server software, or you may be able to configure multiple selectors, for example, for different branch offices or individual e-mail servers.  
+The important thing is that for each selector used to sign outgoing messages from your domain name, you set up a separate TXT-record in DNS.
 
-Note that if you use an e-mail service (as opposed to running your own e-mail server) such as GMail, Exchange Online, etc., they may provide you with a CNAME-record instead of the TXT-record mentioned above. This creates an alias / redirection for the DKIM record, so that the service provider can update the DKIM key on their own DNS server as needed.
+Note that if you use an e-mail service (as opposed to running your own e-mail server) such as Gmail, Exchange Online, etc., they may provide you with a CNAME-record instead of the TXT-record mentioned above. This creates an alias / redirection for the DKIM-record, so that the service provider can update the DKIM key on their own DNS server as needed.
 
 
 DKIM is defined in [RFC6376](https://www.rfc-editor.org/rfc/rfc6376.txt)

@@ -17,7 +17,7 @@ The Domain Name is used to locate the IP address of the web server (through DNS)
 The Path/File is sent to the web server as part of the http request.
 
 When a browser opens a web-page, it first locates the web server's IP address through DNS. This DNS request only contains the Domain Name - not the Path/File.  
-Second it connects to the web server and sends a HTTP request, which includes both the Domain Name and Path/File.
+Second, it connects to the web server and sends a HTTP request, which includes both the Domain Name and Path/File.
 
 If the web server supports different domain names, it then serves the page from a directory according to the domain name supplied in the request.
 
@@ -27,7 +27,7 @@ There are also several free / inexpensive web servers available that do support 
 
 "Apache" [http://httpd.apache.org/](http://httpd.apache.org/){target=_blank}  
 This is the "original" and still the most widely used web-server on the Internet.  
-It is free (or OpenSource), but because it uses text configuration files instead of a GUI, it is probably not the most user friendly choice on Windows.  
+It is free (or OpenSource), but because it uses text configuration files instead of a GUI, it is probably not the most user-friendly choice on Windows.  
 And it is also supported directly by Apache.  
 For information about virtual hosting with Apache, see  
 [https://httpd.apache.org/docs/2.4/vhosts/name-based.html](https://httpd.apache.org/docs/2.4/vhosts/name-based.html){target=_blank}
