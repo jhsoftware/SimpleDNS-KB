@@ -3,29 +3,33 @@ category: 11
 frontpage: false
 comments: true
 vgroup: 5
-vname: Windows 8.1 / Windows 10 / Windows Server 2012R2 / Windows Server 2016
-vsort: 100
-created-utc: 2019-01-01
+vname: Windows Server 2019 / Windows Server 2022
+vsort: 99
+created-utc: 2026-04-28
 modified-utc: 2026-04-28
 ---
-# Configuring Windows to use local DNS server (Windows 8.1 / Windows 10 / Windows Server 2012R2 / Windows Server 2016)
+# Configuring Windows to use local DNS server (Windows Server 2019 / Windows Server 2022)
 
 Right-click the Windows Start button (lower left corner of Windows desktop), and select "Network Connections":  
   
-![](img/21/1.png)  
+![](img/213/1.png)  
   
-Then in the "Network Connections" window, right-click your primary network connection and select "Properties":  
+Then in the "Settings" window, click your primary network connection and then click "Change adapter options":  
   
-![](img/21/2.png)  
-  
+![](img/213/2.png)  
+
+Right-click your Internet connection's icon and select "Properties":
+
+![](img/213/3.png)
+
 Select the "Internet Protocol Version 4 (TCP/IPv4)" item and click the "Properties" button:  
-  
-![](img/21/3.png)  
-  
+
+![](img/213/4.png)
+
 Select "Use the following DNS servers addresses" and enter the IP address of the local DNS server (*) as the Preferred DNS server:  
-  
-![](img/21/4.png)  
-  
+
+![](img/213/5.png)
+
 Finally, click the "OK" button in this and the previous dialog to save your changes.  
   
 
