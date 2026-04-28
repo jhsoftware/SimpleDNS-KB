@@ -10,31 +10,29 @@ modified-utc: 2023-03-29
 
 This plug-in provides a different DNS response depending on what country the DNS request originates from.
 
-This can be used to direct Internet traffic (web, FTP, streaming media, etc.) to a server geographically closer to the end-user, or with contents specific for a geographical area.  
-Note that this is based on the IP address of the resolving DNS server sending the DNS request, which could be in a different country than end-user. However most end-users will typically be using a DNS server in their own country.
+This can be used to direct Internet traffic (web, FTP, streaming media, etc.) to a server (like [OwnCDN](https://owncdn)) geographically closer to the end-user or with contents specific for a geographical area.  
+Note that this is based on the IP address of the resolving DNS server sending the DNS request, which could be in a different country than the end-user. However, most end-users will typically be using a DNS server in their own country.
 
 To determine the sender's country, the plug-in uses an IP-to-Country database - see "Data files" below.
 
-
 Countries are grouped into "regions" for each of which a unique server alias can be defined.
 The plug-in is pre-configured with a default set of 10 regions (North America, Middle East, etc.) based on [CIA's World Factbook](https://www.cia.gov/the-world-factbook/){target=_blank}, but you can configure this in any way that you prefer.
-
 
 There are two variants of the plug-in - "CNAME" and "Clone" - both included in the same .dll file.
 The "CNAME" variant responds with a server name alias (CNAME-record).
 The "Clone" variant responds with one or more cloned host records (A/AAAA records).  
 
-**IMPORTANT:** The "Clone" plug-in variant requires an **Unlimited Zones license** for Simple DNS Plus.  
+> [!IMPORTANT] The "Clone" plug-in variant requires an **Unlimited Zones license** for Simple DNS Plus.  
 (the "CNAME" variant works with any license size)
 
-The host name pointed to by this CNAME-record - or the cloned host records - may represent multiple IP addresses (multiple A/AAAA-records) defined elsewhere - for example a local or remote DNS zone or by another plug-in. 
+The host name pointed to by this CNAME-record - or the cloned host records - may represent multiple IP addresses (multiple A/AAAA-records) defined elsewhere - for example, a local or remote DNS zone or by another plug-in. 
 
 On the "Plug-In Settings" tab, enter the following settings (explained below the image):
 
 ![](img/177/1-2023.png)
 
 - **Host name**  
-Enter the host name that you want to provide GeoDNS data for. For example "www.example.com".  
+Enter the host name that you want to provide GeoDNS data for. For example, "www.example.com".  
 IMPORTANT: For the "CNAME" plug-in variant, always use a sub-name (like a "www." prefixed name) for which no other DNS records exist. Never use a zone name (such as "example.com") because the CNAME-record would conflict with the zone's SOA- and NS-records and cause various problems.  
 If you want to allow end-users to enter your web-site address without the www prefix, you should use the "Clone" plug-in variant.
 - **Data file**  
@@ -76,7 +74,7 @@ As there is no standard for this, we developed our own data file format (`.geodn
 
 For file layout specifics see <https://github.com/jhsoftware/sdnspi-GeoDNS/blob/master/data-file-format.md>
 
-Several companies / web-sites provide IP-to-Country databases - both paid and free.
+Several companies / websites provide IP-to-Country databases - both paid and free.
 
 Two free options are:
 

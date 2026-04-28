@@ -23,7 +23,7 @@ Right-click your Internet connection's icon and select "Properties":
 
 ![](img/27/3.png)
 
-Select the "Internet Protocol Version 4 (TCP/IPv4)" item, and click the "Properties" button:
+Select the "Internet Protocol Version 4 (TCP/IPv4)" item and click the "Properties" button:
 
 ![](img/27/4.png)
 
@@ -31,7 +31,7 @@ Select "Use the following DNS server addresses", and enter the IP address of the
 
 ![](img/27/5.png)
 
-Finally click the "OK" in this and the previous dialogs to save your changes.
+Finally, click the "OK" in this and the previous dialogs to save your changes.
 
 (*) The DNS server IP address must match an IP address that Simple DNS Plus is configured to listen on in the Options dialog / DNS / Inbound Requests section.  
 If you are configuring the computer which Simple DNS Plus is running on, you can use 127.0.0.1 (the "localhost" address) - otherwise you must use an IP address which is accessible over the local area network.
