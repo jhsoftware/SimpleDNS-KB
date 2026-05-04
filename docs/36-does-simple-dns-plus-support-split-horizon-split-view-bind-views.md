@@ -10,7 +10,7 @@ modified-utc: 2023-09-29
 
 Some DNS server implementations have a feature where you can have different versions of a zone served to different clients based on which IP address the DNS request originates from. This is often referred to split-horizon, split-view, or BIND views.
 
-Typically this feature is used to handle the situation where clients on a private LAN need to access a server using a private IP address and clients from the Internet need to access the same server using a public IP address.
+Typically, this feature is used to handle the situation where clients on a private LAN need to access a server using a private IP address and clients from the Internet need to access the same server using a public IP address.
 
 Simple DNS Plus does not have the ability to serve different versions of the same zone, but it does have a couple of features that allow you to serve different records based on the IP address origin of each request:
 
@@ -20,7 +20,7 @@ The simplest way to serve private/public IP addresses (as described above) is th
 
 ![](img/36/1.png)
 
-With the configuration show above - any request from 192.168.0.xxx for a host record that points to 1.2.3.4 - will be served a "cloned" host record pointing to 192.168.0.4.
+With the configuration shown above - any request from 192.168.0.xxx for a host record that points to 1.2.3.4 - will be served a "cloned" host record pointing to 192.168.0.4.
 
 So rather than maintaining duplicates of one or more zones, you can simply configure this in one place.
 
@@ -29,13 +29,13 @@ So rather than maintaining duplicates of one or more zones, you can simply confi
 
 The NAT IP Alias feature (see above) provides one-to-one mapping between public and private IP addresses.
 
-You may need more fine grained control - for example if you have different host names pointing to a single public IP address, but this is mapped to different internal IP addresses via NAT or reverse-proxy.
+You may need more fine-grained control - for example, if you have different host names pointing to a single public IP address, but this is mapped to different internal IP addresses via NAT or reverse-proxy.
 
 In this case, you can use the [Fixed IP Address](https://simpledns.plus/plugin-fixedip) plug-in.
 
 Assuming that you have configured a normal DNS zone with your public DNS records, you can override these records individually for requests coming from your LAN using this plug-in.
 
-For example to point "www.example.com" to 192.168.0.21 for users from 192.168.0.xxx (your LAN) only, you could setup a Fixed IP Address plug-in as follows:
+For example, to point "www.example.com" to 192.168.0.21 for users from 192.168.0.xxx (your LAN) only, you could setup a Fixed IP Address plug-in as follows:
 
 From the main window, click the "Plug-ins" button:
 
@@ -65,7 +65,7 @@ In the "IP address(es)" window, select "IP address subnet", enter the first LAN 
 
 ![](img/36/5.png)
 
-Also click the "OK" button in the "DNS request access rule" window.
+Also, click the "OK" button in the "DNS request access rule" window.
 
 Back in the "Fixed IP Address Plug-In Instance" window, click the "Add" button, select "Requested domain name", select "is...":
 

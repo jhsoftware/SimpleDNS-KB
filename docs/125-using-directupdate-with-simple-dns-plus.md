@@ -8,21 +8,21 @@ modified-utc: 2019-01-01
 ---
 # Using DirectUpdate with Simple DNS Plus
 
-<div class="yellowbox">NB: This article was written before we released the [DynDNS Service plug-in](https://simpledns.plus/plugin-dyndns).  
-DirectUpdate can also be used with the DynDNS Service plug-in making it even easier to run a DynDNS service</div>
+> [!NOTE] This article was written before we released the [DynDNS Service plug-in](https://simpledns.plus/plugin-dyndns).  
+DirectUpdate can also be used with the DynDNS Service plug-in making it even easier to run a DynDNS service
 
-DirectUpdate is a product by William Levra-Juillet - [http://www.directupdate.net](http://www.directupdate.net){target=_blank}
+DirectUpdate is a product by William Levra-Juillet - available from [download.cnet.com](https://download.cnet.com/directupdate/3000-2150_4-10070459.html){target=_blank} and other download sites.
 
 You can use DirectUpdate to automatically update DNS records on a remote Simple DNS Plus server. DirectUpdate will update the DNS records each time the IP address changes on the local computer.
 
 This makes it possible to run different services (such as a web-server) on a computer with a dynamic IP address.  
-You can also use this anytime you need to access roaming computers - for example traveling sales people with laptops.
+You can also use this anytime you need to access roaming computers - for example, traveling sales people with laptops.
 
-In the following example, we have a roaming laptop with a dynamic IP address (currently 5.6.7.8) which we want to access using the domain name "laptop.jhsoft.com", and we are running a Simple DNS Plus server with the name of "ns1.example.com" on IP address 11.22.33.44 (static).
+In the following example, we have a roaming laptop with a dynamic IP address (currently 5.6.7.8) which we want to access using the domain name "laptop.example.com". We are running a Simple DNS Plus server with the name of "ns1.example.com" on IP address 11.22.33.44 (static).
 
-Step 1: First you need to setup a zone that will hold the DNS record for the laptop (the dynamic IP computer). See [this article](/kb/4/basic-dns-server-configuration-example). If you have already setup a zone for your domain name, you can use that.
+Step 1: First, you need to set up a zone that will hold the DNS record for the laptop (the dynamic IP computer). See [this article](/kb/4/basic-dns-server-configuration-example). If you have already set up a zone for your domain name, you can use that.
 
-Step 2: Next you need to setup a TSIG key (basically a user name / password pair) for the laptop.
+Step 2: Next you need to set up a TSIG key (basically a user name / password pair) for the laptop.
 
 In the main window of Simple DNS Plus, click the Options button:
 
@@ -43,7 +43,7 @@ When done click the "OK" button, and also click the "OK" button in the previous 
 Step 3: Setup DirectUpdate on the laptop.
 
 After installing Directupdate, you need to add a new account to it.  
-Right-click the tray icon and from the the pop-up menu select "Launch admin now..." to access to admin module:
+Right-click the tray icon and from the pop-up menu select "Launch admin now..." to access to admin module:
 
 ![](img/125/4.png)
 

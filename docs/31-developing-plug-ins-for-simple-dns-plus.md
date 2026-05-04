@@ -8,7 +8,7 @@ modified-utc: 2023-09-29
 ---
 # Developing plug-ins for Simple DNS Plus
 
-Plug-ins can be developed in any .NET Framework 4.8 programming language including Visual Basic.NET and C#.
+Plug-ins can be developed in any .NET Framework 4.8 programming language, including Visual Basic.NET and C#.
 
 The standard Simple DNS Plus installation includes the "sdnscommon.dll" file (and "sdnscommon.xml" file to provide Visual Studio intellisense) in the main installation directory.
 
@@ -46,7 +46,7 @@ To create your own plug-in for Simple DNS Plus, create a .NET 4.8 library (.dll 
 	For plug-ins that do not process DNS requests directly, but provide some other related functionality.
 	
 
-Additionally the plug-in class may implement one or more of the following interfaces:
+Additionally, the plug-in class may implement one or more of the following interfaces:
 
 - **JHSoftware.SimpleDNS.Plugin.IOptionsUI**\
 	Implement this interface in plug-ins that provide a user interface to configure plug-in settings.
@@ -74,6 +74,6 @@ Additionally the plug-in class may implement one or more of the following interf
 	Plug-in specific signaling between plug-in and Simple DNS Plus.<br />
 	Used for unique plug-in situations which require extra information to be passed between the plug-in and Simple DNS Plus. Also allows for the implementation of new features without changing the plug-in interfaces. Plug-in developers who need to retrieve/update settings etc. which are not provided by other plug-in methods may request a unique signal code for this.
 
-Your compiled library must be placed in the "Plugins" sub-directory of the directory where Simple DNS Plus is installed, and it will then appear in the list of available plug-in types when creating a new plug-in instance.
+Your compiled library must be placed in the "Plugins" subdirectory of the directory where Simple DNS Plus is installed, and it will then appear in the list of available plug-in types when creating a new plug-in instance.
 
 

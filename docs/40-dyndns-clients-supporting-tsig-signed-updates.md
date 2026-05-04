@@ -4,7 +4,7 @@ frontpage: false
 comments: true
 refs: 80,35,127,125,173
 created-utc: 2019-01-01
-modified-utc: 2019-01-01
+modified-utc: 2026-05-04
 ---
 # DynDNS clients supporting TSIG signed updates
 
@@ -15,9 +15,9 @@ DynDNS client software known to support TSIG signed dynamic DNS updates:
 
 \- "DynSite" from [http://noeld.com/dynsite.asp](http://noeld.com/dynsite.asp){target=_blank} (Windows)
 
-\- "Direct Update" from [http://www.directupdate.net](http://www.directupdate.net){target=_blank} (Windows)
+\- "Direct Update" by William Levra-Juillet available from [download.cnet.com](https://download.cnet.com/directupdate/3000-2150_4-10070459.html){target=_blank} and other download sites (Windows)
 
 \- "IPUpdate" from [http://ipupdate.sourceforge.net](http://ipupdate.sourceforge.net){target=_blank} (Windows / Linux)
 
-Alternatively you can use almost any existing DynDNS client software by using HTTP based updates - see reference article below.
+Alternatively, you can use almost any existing DynDNS client software by using HTTP-based updates - see reference article below.
 
