@@ -3,7 +3,7 @@ category: 20
 frontpage: false
 comments: true
 created-utc: 1970-01-01
-modified-utc: 2023-10-01
+modified-utc: 2026-05-05
 ---
 # DNS Blacklist Editor
 
