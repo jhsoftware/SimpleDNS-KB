@@ -58,12 +58,14 @@ Or compile from the command line (or as part of a script) by executing
 ### Download
 
 ![download](img/208/todisk.gif)
-Version 1.0 build 4 (May 18th 2009): [dnsbledit.exe (74 KB)](https://simpledns.plus/outbox/dnsbledit.exe)
+Version 1.0 build 5 (May 5th 2026): [dnsbledit.exe (82 KB)](https://simpledns.plus/outbox/dnsbledit.exe)
+
+Standalone command line compiler only (no editor / GUI): [dnsblcompile.exe (23 KB)](https://simpledns.plus/outbox/dnsblcompile.exe)
 
 ### System Requirements
 
-- Windows 98 / 2000 or later
-- Microsoft .NET Framework 2.0 - 3.5
+- Windows 7 / Windows Server 2008 R2 or later
+- Microsoft .NET Framework 4.8.x
 
 ### Licensing
 
