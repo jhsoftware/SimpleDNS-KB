@@ -12,14 +12,14 @@ modified-utc: 2019-01-01
 
 This is done using DNS "NAPTR" records under the "e164.arpa" domain.  
 Telephone numbers are mapped by reversing the digits of a phone number starting with the international dialing code (1=USA/Canada, 44=U.K., 45=Denmark, etc.) and inserting dots between all digits.  
-For example the phone number 12345678 in Denmark (45) would be "8.7.6.5.4.3.2.1.5.4.e164.arpa".
+For example, the phone number 12345678 in Denmark (45) would be "8.7.6.5.4.3.2.1.5.4.e164.arpa".
 
 The "e164.arpa" domain is sub-delegated by RIPE (see [http://www.ripe.net/enum/](http://www.ripe.net/enum/){target=_blank}) to authorities in each country.  
 Note: Not all countries are delegated yet at this time.
 
-To host ENUM records for your phone numbers, the e164.arpa sub-domain for your phone numbers would first need to be delegated to your DNS servers by the local authority in your country (typically whoever assigns phone numbers to phone companies).
+To host ENUM records for your phone numbers, the e164.arpa subdomain for your phone numbers would first need to be delegated to your DNS servers by the local authority in your country (typically whoever assigns phone numbers to phone companies).
 
-To setup NAPTR records in Simple DNS Plus, in the main window click the "Records" button, then right-click a zone in the left list, select "Other new record...", and then "NAPTR record".
+To set up NAPTR records in Simple DNS Plus, in the main window click the "Records" button, then right-click a zone in the left list, select "Other new record...", and then "NAPTR record".
 
 For example:
 

@@ -8,7 +8,7 @@ vsort: 2
 created-utc: 2019-01-01
 modified-utc: 2019-01-01
 ---
-# How do I backup and restore Simple DNS Plus settings and data? (v. 5.x)
+# How do I back up and restore Simple DNS Plus settings and data? (v. 5.x)
 
 The different settings (Options dialog etc.) are recorded in various ".xml" files in the Simple DNS Plus application data directory:
 
@@ -21,6 +21,6 @@ The actual zone data files (zones and records) are stored in a separate director
 
 ![](img/49/1.png)
 
-To backup: Copy all ".xml" files, and ALL files in the data directory.
+To back up: Copy all ".xml" files, and ALL files in the data directory.
 
 To restore the settings and data on a new or reinstalled computer: Install a fresh copy of Simple DNS Plus and copy the backup files back to their original location.

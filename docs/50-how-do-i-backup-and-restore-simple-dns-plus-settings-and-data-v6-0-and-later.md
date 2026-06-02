@@ -8,9 +8,9 @@ vsort: 1
 created-utc: 2019-01-01
 modified-utc: 2021-10-07
 ---
-# How do I backup and restore Simple DNS Plus settings and data? (v. 6.0 and later)
+# How do I back up and restore Simple DNS Plus settings and data? (v. 6.0 and later)
 
-### Which files to backup 
+### Which files to back up 
 
 In Simple DNS Plus v. 6.0 and later, the DNS zones and records, and the different program settings (Options dialog etc.) are all stored in a single database file called "sdnsplus.db" in the Simple DNS Plus application data directory.
 
@@ -19,7 +19,7 @@ On Windows Vista / Server 2008 and later, this location is typically:\
 On earlier Windows versions:\
 `C:\Documents and Settings\All Users\Application Data\JH Software\Simple DNS Plus`
 
-### How to backup
+### How to back up
 
 You can shut down Simple DNS Plus, make a copy of the "sdnsplus.db" file, and that's your backup.
 
@@ -41,13 +41,13 @@ Click the "Records" button, then "File" menu, then "Import...", then "Import a s
 
 ![](img/50/1.png)
 
-Click then "Next" button, select the zones to import, and follow the prompts.
+Click the "Next" button, select the zones to import, and follow the prompts.
 
 ### License
 
 Your license is either stored in the "sdnsplus.db" file (see above), or in a separate "license.json" / "license.xml" file in the same location - depending on your version of Simple DNS Plus.
 
-It is not stricly necessary to back up the "license.json" / "license.xml" file, as you can always re-activate the license (as long as you have your license key).
+It is not strictly necessary to back up the "license.json" / "license.xml" file, as you can always re-activate the license (as long as you have your license key).
 
 If you restore Simple DNS Plus to a new computer, your license will always need to be re-activated. 
 For more on this, please see [How to move Simple DNS Plus to a new computer](/kb/69)
@@ -93,4 +93,4 @@ Enter your password, and the daily backup task has been scheduled:
 
 ![](img/50/10.png)
 
-Finally make sure to point your backup software to this backup folder.
+Finally, make sure to point your backup software to this backup folder.
