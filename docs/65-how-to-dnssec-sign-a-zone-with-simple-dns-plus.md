@@ -19,18 +19,17 @@ In the "On-line DNSSEC keys" dialog, click the "Add..." button:
 
 ![](img/65/3.png)
 
-First create a key of the "KSK" type. We recommend using the RSA/SHA-256 algorithm and a 2048 bit key size:
+First, create a key of the "KSK" type. We recommend using the RSA/SHA-256 algorithm and a 2048-bit key size:
 
 ![](img/65/4.png)
 
-And then a key of the "ZSK" type. We recommend using the RSA/SHA-256 algorithm and a 1024 bit key size:
+And then a key of the "ZSK" type. We recommend using the RSA/SHA-256 algorithm and a 1024-bit key size:
 
 ![](img/65/5.png)
 
 You should now have one KSK and one ZSK. Click the OK button in the "On-line DNSSEC keys" dialog:
 
 ![](img/65/6.png)
-
 
 Back in the "DNSSEC Sign Zone" dialog, click the "Sign zone" button:
 
@@ -56,14 +55,14 @@ Now we need to copy this record to the parent zone. The way this is done varies 
 
 As an example, with "name.com" (a domain name registrar), you log into your account, select "My domains", click the "Quick Links" drop-down next to the domain name, and select "Edit nameservers". On the "Edit Nameservers" page, there is a link to "DNSSEC Management page". And here there is a form to enter the DS-record data.
 
-Copy the data from the "DNSSEC DS-records" dialog above to the registrars form and submit this:
+Copy the data from the "DNSSEC DS-records" dialog above to the registrar's form and submit this:
 
 ![](img/65/11.png)
 
 At this point you may want to test the DNSSEC setup using one of the available on-line tools. For example <http://dnsviz.net>
 
 
-Finally we can configured the zone to be automatically re-signed whenever we update its records.
+Finally, we can configure the zone to be automatically re-signed whenever we update its records.
 
 In the DNS Records window, open the "DNSSEC" button drop-down menu and select "Settings...":
 

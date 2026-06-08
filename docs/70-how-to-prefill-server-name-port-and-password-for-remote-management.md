@@ -9,7 +9,7 @@ modified-utc: 2019-01-01
 
 Note: Remote management is available in Simple DNS Plus v. 5.2 and later only. [Details](https://simpledns.plus/news/5).
 
-If you frequently remote manage a Simple DNS Plus server, you can create a desktop shortcut with the remote server name and password prefilled to make it quicker to access the server.
+If you frequently remotely manage a Simple DNS Plus server, you can create a desktop shortcut with the remote server name and password prefilled to make it quicker to access the server.
 
 First, right-click on your Windows desktop, and from the pop-up menu select "New" and "Shortcut":
 
@@ -24,7 +24,7 @@ If remote management is configured to use a port other than the default (9053), 
 
 ![](img/70/3.png)
 
-Click the "Next" button, and enter a name for the shortcut (for example the name of the remote server):
+Click the "Next" button and enter a name for the shortcut (for example, the name of the remote server):
 
 ![](img/70/4.png)
 

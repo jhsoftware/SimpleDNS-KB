@@ -30,9 +30,9 @@ In the "Internet Protocol Version 4 (TCP/IPv4) Properties" dialog click the "Adv
 
 ![](img/63/5.png)
 
-In the "Advanced TCP/IP Settings" dialog select the "DNS" tab, and specify which DNS suffixes to use for resolving unqualified domain names:
+In the "Advanced TCP/IP Settings" dialog, select the "DNS" tab and specify which DNS suffixes to use for resolving unqualified domain names:
 
 ![](img/63/6.png)
 
-If you choose the first (and default) option to append primary and connection specific DNS suffixes, then you will also need to configure the primary DNS suffix. See reference article below.
+If you choose the first (and default) option to append primary and connection-specific DNS suffixes, then you will also need to configure the primary DNS suffix. See reference article below.
 

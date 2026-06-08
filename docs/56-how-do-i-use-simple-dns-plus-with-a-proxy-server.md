@@ -8,7 +8,7 @@ modified-utc: 2019-01-01
 ---
 # How do I use Simple DNS Plus with a proxy server?
 
-Please see the reference articles below for Illustrations on how to setup popular proxy server products.
+Please see the reference articles below for Illustrations on how to set up popular proxy server products.
 
 A proxy server often includes a DNS proxy or mapping function used to relay DNS requests from clients behind the proxy server.
 

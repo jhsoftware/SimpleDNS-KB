@@ -13,10 +13,10 @@ With Simple DNS Plus (on a public static IP address), you can run your own dyndn
   
 Note that this requires Simple DNS Plus v. 5.2 or later with the [DynDNS Service plug-in](https://simpledns.plus/plugin-dyndns){target=_blank} v. 5.2.30 (or later). This plug-in version comes with Simple DNS Plus v. 6.0 build 119 and later. For earlier Simple DNS Plus versions/builds, it can be downloaded from [https://github.com/jhsoftware/sdns-DynDns/releases](https://github.com/jhsoftware/sdns-DynDns/releases){target=_blank}  
   
-With many routers, the dyndns.org (Dyn.com) update URL host name ("members.dyndns.org") is hard-coded, and so you need to "fake" the IP address for this in order to intercept update requests from the router. You can do this by configuring the router to use your own DNS server, and then have your DNS server point "members.dyndns.org" to your own server IP address - for example using the "Fixed IP Address" plug-in as described below.  
+With many routers, the dyndns.org (Dyn.com) update URL host name ("members.dyndns.org") is hard-coded, and so you need to "fake" the IP address for this in order to intercept update requests from the router. You can do this by configuring the router to use your own DNS server, and then have your DNS server point "members.dyndns.org" to your own server IP address - for example, using the "Fixed IP Address" plug-in as described below.  
 If your router allows you to specify the IP address of the dyndns server, then you should do so instead and skip the step below about configuring the router's DNS IP addresses.  
   
-For the walk-through below, we have setup Simple DNS Plus on a computer with static IP address 40.69.210.0 and, in a different location, we have an ASUS RT-N56U Internet router in with a dynamic public IP address (80.62.117.233 at the time of this writing).  
+For the walk-through below, we have set up Simple DNS Plus on a computer with static IP address 40.69.210.0 and, in a different location, we have an ASUS RT-N56U Internet router in with a dynamic public IP address (80.62.117.233 at the time of this writing).  
 On the firewall on / in front of the Simple DNS Plus computer, we have allowed UDP and TCP to port 53 (DNS requests) and TCP to port 80 (HTTP requests).  
   
 On the DNS server computer, in the main window of Simple DNS Plus, click the "Plug-ins" button:  
@@ -31,7 +31,7 @@ In the "Add new Plug-In instance" dialog, select "Fixed IP Address" and click th
   
 ![](img/66/3.png)  
   
-In the "Fixed IP Address Plug-In Instance" dialog, select "Plug-in Settings" tab, enter the public IP address of the the computer that Simple DNS Plus is running on:  
+In the "Fixed IP Address Plug-In Instance" dialog, select "Plug-in Settings" tab, enter the public IP address of the computer that Simple DNS Plus is running on:  
   
 ![](img/66/4.png)  
   
@@ -51,7 +51,7 @@ In the "DynDNS Service Plug-In Instance" dialog, in the "General" tab, check "Pe
   
 ![](img/66/8.png)  
   
-In the "Plug-In Settings" tab, enter the host name suffix you want to use, and click the "Add..." button:  
+In the "Plug-In Settings" tab, enter the host name suffix you want to use and click the "Add..." button:  
   
 ![](img/66/9.png)  
   
@@ -76,7 +76,7 @@ In our "ASUS RT-N56U" router, this is done in the "WAN" section, under the "Inte
   
 ![](img/66/14.png)  
   
-Configure your router to use the dyndns.org (Dyn.com) service using the user-ID and password setup in Simple DNS Plus above.  
+Configure your router to use the dyndns.org (Dyn.com) service using the user-ID and password the setup in Simple DNS Plus above.  
 In our "ASUS RT-N56U" router, this is done in the "WAN" section, under the "DDNS" tab.  
 Note that the "Host Name" setting / parameter is not used by the Simple DNS Plus plug-in and can be set to any value (such as "dummy"):  
   
@@ -91,5 +91,5 @@ If everything is configured correctly, you should now see a DNS request for "mem
 Please note:  
 For above to work, the router must use the dyndns.org (Dyn.com) "Legacy Authentication URL".  
 All routers that we have tested with so far do this.  
-However in addition to the "Legacy Authentication URL", dyndns.org (Dyn.com) also provides another (newer) update URL which uses SSL (https://...). The specification for both URLs is available at [https://help.dyn.com/remote-access-api/perform-update/](https://help.dyn.com/remote-access-api/perform-update/){target=_blank} .  
+However, in addition to the "Legacy Authentication URL", dyndns.org (Dyn.com) also provides another (newer) update URL which uses SSL (https://...). The specification for both URLs is available at [https://help.dyn.com/remote-access-api/perform-update/](https://help.dyn.com/remote-access-api/perform-update/){target=_blank} .  
 So some routers may use the newer SSL version. It would not be possible to intercept such requests as this would require the private key of the SSL certificate for "members.dyndns.org".  
