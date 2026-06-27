@@ -25,4 +25,4 @@ Back in the plug-in instance dialog, the new rule has been added:
 
 If you need to add domains or make other changes to the whitelist, click the "Edit" button.
  
-NOTE: Computers and Internet browsers cache DNS records, so if a web-site was blocked and you add it to the whitelist to gain access, you may also need to restart all browser instances and type `ipconfig /flushdns` at a command prompt on the local computer before you can access the web-site.
+NOTE: Computers and Internet browsers cache DNS records, so if a website was blocked, and you add it to the whitelist to gain access, you may also need to restart all browser instances and type `ipconfig /flushdns` at a command prompt on the local computer before you can access the website.

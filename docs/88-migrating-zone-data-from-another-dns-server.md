@@ -14,7 +14,7 @@ Simple DNS Plus can import zone data from other DNS servers using standard zone 
 BIND is a popular DNS server used mostly on Unix/Linux.  
 All versions of BIND store individual DNS zones in standard zone files.  
 BIND versions 8 and later uses a proprietary boot file called "named.conf" file to list the zones to load. Earlier versions used a standard boot file (RFC1035).  
-The Import Wizard in Simple DNS Plus can read both the "named.conf" format as well as the standard boot file format - see below.
+The Import Wizard in Simple DNS Plus can read both the "named.conf" format and the standard boot file format - see below.
 
 ### Importing from Microsoft DNS server
 
@@ -31,7 +31,7 @@ This will generate a standard "Boot" file (again typically under 'c:\windows\sys
 
 Before you can import the DNS zones from such a server, you will first need to export the zones to standard zone files and create a standard boot file listing the zones.
 
-For Windows Server 2003 and later, we have created a tool which can help you do this called "MsDnsExport" - available for download from <https://github.com/jhsoftware/MsDnsExport/releases>. For details on using this tool please see the README file at <https://github.com/jhsoftware/MsDnsExport>
+For Windows Server 2003 and later, we have created a tool which can help you do this called "MsDnsExport" - available for download from <https://github.com/jhsoftware/MsDnsExport/releases>. For details on using this tool, please see the README file at <https://github.com/jhsoftware/MsDnsExport>
 
 With Windows 2000 Server, you need to check the properties of each zone and change zones of type "Active Directory-integrated" to "Standard..." - for each zone, and then configure the server to "load from file" as described above.
 

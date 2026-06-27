@@ -12,11 +12,11 @@ Windows Me/2000 and later have an option to "register this connection in DNS" (u
 This means that every so often these Windows clients will send an "update" request to the primary DNS server for the domain they belong to (computer name) to "register" themselves in DNS.  
 If you don't allow "dynamic updates" (the default setting) for that particular domain (see zone properties dialog), the update will be refused by Simple DNS Plus.
 
-After this refusal, the client will try an encrypted update (thinking it was refused because it wasn't secure) which starts with request for a transaction encryption key (TKEY).
+After this refusal, the client will try an encrypted update (thinking it was refused because it wasn't secure) which starts with a request for a transaction encryption key (TKEY).
 
-Unfortunately this often results in excessive and invalid Update and TKEY requests being sent all over the Internet, to the annoyance of many ISPs and even the Internet root DNS servers.
+Unfortunately, this often results in excessive and invalid Update and TKEY requests being sent all over the Internet, to the annoyance of many ISPs and even the Internet root DNS servers.
 
 If you want client computers registered in DNS - enable "dynamic updates" for the zone.  
-Otherwise the best thing to do is disabling the "register this connection in DNS" option on all Windows machines.  
+Otherwise the best thing to do is to disable the "register this connection in DNS" option on all Windows machines.  
 (Or contact the people sending the requests and tell them to do so)
 

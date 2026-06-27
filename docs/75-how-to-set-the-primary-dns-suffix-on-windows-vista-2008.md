@@ -18,7 +18,7 @@ Click the "System" link:
 
 ![](img/75/2.png)
 
-Scoll down to the "Computer name, domain, and workgroup settings" section, and click the "Change settings" link:
+Scroll down to the "Computer name, domain, and workgroup settings" section and click the "Change settings" link:
 
 ![](img/75/3.png)
 

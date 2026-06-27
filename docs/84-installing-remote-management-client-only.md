@@ -30,12 +30,12 @@ Next, select NOT to install the "Core Service" feature:
 
 ### Plug-ins and remote management
 
-It is important that the any plug-ins that you use on the service computer are also installed on the remote client computer.\
+It is important that any plug-ins that you use on the service computer are also installed on the remote client computer.\
 This includes the "Standard plug-ins" from the main installation (see above) as well as any downloaded and 3rd party plug-ins.\
-And make sure to to use the same version of the plug-ins on both service and remote client PCs.\
+And make sure to use the same version of the plug-ins on both service and remote client PCs.\
 Otherwise the remote client GUI will not be able to configure those plug-ins.
 
 ### Service / client versions
 
-Remote management is designed to work between service and clients installation with different version/build numbers within a limited range defined by each version/build. Generally different versions/builds will be compatible as long of configuration files layout have not been altered in between.\
+Remote management is designed to work between service and client installations with different version/build numbers within a limited range defined by each version/build. Generally, different versions/builds will be compatible as long of configuration files layout have not been altered in between.  
 An error message will be displayed if the versions/builds are not compatible when you try to connect.

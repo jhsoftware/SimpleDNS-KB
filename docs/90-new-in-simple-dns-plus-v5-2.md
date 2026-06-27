@@ -17,7 +17,7 @@ New features in v. 5.2:
 [Secure Zone Transfers (TSIG signed)](#seczt)  
 [Check Internet Delegations wizard](#chkdel)  
 [Windows Performance Counters](#perfctr)  
-[High performance, multi-threaded plug-in processing](#mtpi)  
+[High performance, multithreaded plug-in processing](#mtpi)  
 [DNS request "rules" for plug-ins](#rules)  
 [Enhanced DNS Look Up tool](#lookup)  
 [New standard plug-ins](#stdpi)  
@@ -64,7 +64,7 @@ For details see [this news article](https://simpledns.plus/news/6).
 
 ### Check Internet Delegations wizard{#chkdel}
 
-This new wizard lets you automatically test if the NS and SOA records in your local zone data match the actual current delegations on the Internet. This can be very useful both to check for errors and to make sure that you still own the domain names that you think you do. It could also be used for example by ISPs to see if any customers have left them (changed their DNS to another provider).
+This new wizard lets you automatically test if the NS and SOA records in your local zone data match the actual current delegations on the Internet. This can be very useful both to check for errors and to make sure that you still own the domain names that you think you do. It could also be used, for example, by ISPs to see if any customers have left them (changed their DNS to another provider).
 
 ![](img/90/5.png)
 
@@ -78,21 +78,21 @@ Simple DNS Plus now supplies 9 different performance counters which can be graph
 
 ---
 
-### High performance, multi-threaded plug-in processing{#mtpi}
+### High performance, multithreaded plug-in processing{#mtpi}
 
 All plug-in processing is now performed asynchronously (in separate threads) so that other DNS requests that are not processed by the plug-in can proceed without delay.  
-We have also added the option for plug-ins to process multiple DNS requests in parallel. This can improve plug-in performance significantly - especially for resources on multi-core computers.
+We have also added the option for plug-ins to process multiple DNS requests in parallel. This can improve plug-in performance significantly - especially for resources on multicore computers.
 
 ![](img/90/7.png)
 
-Multi threading is currently available in the [MS SQL Server](https://simpledns.plus/plugin-mssql), [MS SQL Server Plus](https://simpledns.plus/plugin-mssqlplus), and the [MySQL Server](https://simpledns.plus/plugin-mysql) plug-ins, and is of course also available for implementation by 3rd party plug-in developers.
+Multi threading is currently available in the [MS SQL Server](https://simpledns.plus/plugin-mssql), [MS SQL Server Plus](https://simpledns.plus/plugin-mssqlplus), and the [MySQL Server](https://simpledns.plus/plugin-mysql) plug-ins, and is, of course, also available for implementation by 3rd party plug-in developers.
 
 ---
 
 ### DNS request "rules" for plug-ins{#rules}
 
-New "rule engine" and GUI editor for setting up "rules" controlling which DNS requests are processed by each plug-in. This is configured in new "DNS Requests" tab - which replaces the "DNS Ask About" and "DNS Access" tabs.  
-Plug-ins can provide custom "rules" for other plug-ins. For example; you can setup a rule that a plug-in may only be queried from IP addresses listed by another plug-in. Such rules may be based on databases or practically anything else you can think of.
+New "rule engine" and GUI editor for setting up "rules" controlling which DNS requests are processed by each plug-in. This is configured in the new "DNS Requests" tab - which replaces the "DNS Ask About" and "DNS Access" tabs.  
+Plug-ins can provide custom "rules" for other plug-ins. For example, you can set up a rule that a plug-in may only be queried from IP addresses listed by another plug-in. Such rules may be based on databases or practically anything else you can think of.
 
 ![](img/90/8.png)
 
@@ -102,7 +102,7 @@ More details are available in [this article](/kb/110/plug-ins-in-simple-dns-plus
 
 ### Enhanced DNS Look Up tool{#lookup}
 
-New options pane docked in main window for quick and easy access, separate DNS and WHOIS server fields, new server port fields, and new DNSSEC options / output:
+New options pane docked in the main window for quick and easy access, separate DNS and WHOIS server fields, new server port fields, and new DNSSEC options / output:
 
 ![](img/90/9.png)
 
@@ -129,7 +129,7 @@ Instructs Simple DNS Plus to ignore (not answer) specified DNS requests. [More d
 - Active Log View can be paused (from main View menu / log right-click menu / F9 key).
 - Options / DNS / Resolver / Caching: New separate setting for maximum cache time for negative responses.
 - Options / DNS / Local Zones / Data Files: New "Maximum TTL" option.
-- Options / DNS / Lame Requests: Default changed to "Respond with a Refused error message" (moved to top of list).
+- Options / DNS / Lame Requests: Default changed to "Respond with a Refused error message" (moved to the top of the list).
 - New plug-in option: "Perform DNS recursion for IP addresses listed by this plug-in".
 - New plug-in option: "Whitelist IP addresses listed by this plug-in from all DNSBLs".
 - sdnsplus.exe is now dedicated to command line functions (no longer used to start Simple DNS Plus) and now also returns exit code 1 if a command line operation fails, which enables more advanced command line / PowerShell scripting scenarios.

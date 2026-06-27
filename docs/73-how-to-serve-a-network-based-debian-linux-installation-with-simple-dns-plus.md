@@ -5,16 +5,16 @@ comments: true
 created-utc: 2019-01-01
 modified-utc: 2019-01-01
 ---
-# How to serve a network based Debian Linux installation with Simple DNS Plus
+# How to serve a network-based Debian Linux installation with Simple DNS Plus
 
 This article describes how to install Debian Linux over the network (no CDs, floppy-disks, USB keys, etc.) using the [DHCP Server](https://simpledns.plus/plugin-dhcp) and [TFTP Server](https://simpledns.plus/plugin-tftp) plug-ins in Simple DNS Plus (running on a Windows computer).
 
 This Debian Linux installation is just an example to demonstrate the DHCP/TFTP plug-in combination.  
 Similar procedures can be used to network install or boot other operating systems, or provision IP phones and other devices.
 
-You will need two computers (real or virtual) - one running Windows and Simple DNS Plus, and another empty computer (to install Debian Linux on) with a BIOS and network card that support PXE booting (most computers/network cards manufatured since ~2000 support this). Make sure PXE / network booting is enabled in BIOS.
+You will need two computers (real or virtual) - one running Windows and Simple DNS Plus, and another empty computer (to install Debian Linux on) with a BIOS and network card that support PXE booting (most computers/network cards manufactured since ~2000 support this). Make sure PXE / network booting is enabled in BIOS.
 
-First, make sure that you have the lastest version of Simple DNS Plus installed ([download](https://simpledns.plus/download)), as well as the lastest release of the [DHCP Server](https://simpledns.plus/plugin-dhcp) and [TFTP Server](https://simpledns.plus/plugin-tftp) plug-ins.
+First, make sure that you have the latest version of Simple DNS Plus installed ([download](https://simpledns.plus/download)), as well as the lastest release of the [DHCP Server](https://simpledns.plus/plugin-dhcp) and [TFTP Server](https://simpledns.plus/plugin-tftp) plug-ins.
 
 Next, prepare the TFTP folder structure:  
 1) Create a directory on the Simple DNS Plus computer to be the TFTP root - for example C:\TFTP_Root.  
@@ -31,11 +31,11 @@ In the "DHCP Server Plug-In Instance" dialog, select the "Plug-In Settings" tab,
 
 ![](img/73/2.png)
 
-In the "Default DHCP options" dialog, select the "IP routing" tab, and enter the IP address of your Internet router:
+In the "Default DHCP options" dialog, select the "IP routing" tab and enter the IP address of your Internet router:
 
 ![](img/73/3.png)
 
-Selec the "TFTP / Boot file" tab, in the "TFTP server IP address" field enter the IP address of the computer running Simple DNS Plus, and in the "Boot file name" field enter "pxelinux.0", click the "OK" button in this and the previous dialog:
+Select the "TFTP / Boot file" tab, in the "TFTP server IP address" field enter the IP address of the computer running Simple DNS Plus, and in the "Boot file name" field enter "pxelinux.0", click the "OK" button in this and the previous dialog:
 
 ![](img/73/4.png)
 
@@ -47,7 +47,7 @@ In the "TFTP Server Plug-In Instance" dialog, select the "Plug-In Settings" tab,
 
 ![](img/73/6.png)
 
-Now turn on the second computer and you should see Simple DNS Plus assigning it an IP address (via DHCP) and then TFTP file transfer requests in the Simple DNS Plus log:
+Now turn on the second computer, and you should see Simple DNS Plus assigning it an IP address (via DHCP) and then TFTP file transfer requests in the Simple DNS Plus log:
 
 ![](img/73/7.png)
 

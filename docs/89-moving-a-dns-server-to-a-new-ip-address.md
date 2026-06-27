@@ -7,19 +7,19 @@ modified-utc: 2019-01-01
 ---
 # Moving a DNS server to a new IP address
 
-When doing this, the most important thing is to make sure that at least one of the DNS server listed in all your domain name registrations is always working during the whole process.
+When doing this, the most important thing is to make sure that at least one of the DNS servers listed in all your domain name registrations is always working during the whole process.
 
 Changing domain registrations and/or DNS server registration can take anywhere from 12 to 72 hours to be updated on the root servers etc.  
-And it could take even longer for the changes to reach the whole Internet if you current NS-records or associated A-records have long TTL values.
+And it could take even longer for the changes to reach the whole Internet if your current NS-records or associated A-records have long TTL values.
 
-If you are moving both your DNS servers, if at all possible try to move only one at a time.  
-This way your visitors will still be able to reach your web-sites etc. during the whole process.
+If you are moving both your DNS servers, if at all possible, try to move only one at a time.  
+This way your visitors will still be able to reach your websites etc. during the whole process.
 
 Another way to ensure continuous service is to have both the old and the new DNS server running for several days during the move.
 
 If you are keeping the DNS server name (typically "ns#.domain.com") and just moving it to a new IP address, then you only need to change the DNS server registration (ns#.domain.com = IP) with your registrar and change your own A-record for the server name.  
 Changing the DNS server registration is often a "hidden" function with the registrar.  
-For example with Network Solutions you login to your account, and then use the "Manage Host Servers" function.  
+For example, with Network Solutions you log in to your account and then use the "Manage Host Servers" function.  
 Other registrars may call this something else - or don't even have an online function for this and instead require you to e-mail them about this.
 
 Keep in mind that if you host domain names under different registries (for example .com and .co.uk), you will need to change the DNS server registration with each of these registries.
