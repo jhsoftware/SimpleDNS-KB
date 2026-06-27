@@ -10,7 +10,7 @@ modified-utc: 2019-01-01
 
 In Simple DNS Plus v. 5.0 and later, the "Quick Zone Wizard" (formerly "Quick Domain Wizard") is template-based and supports multiple templates through a drop-down menu on the Quick button.
 
-Making and using your own templates is easy and can be a great help and time saver if you frequently setup new DNS zones.  
+Making and using your own templates is easy and can be a great help and time saver if you frequently set up new DNS zones.  
 You can use templates, for example, to ensure company standards are followed, automate which DNS records to add for different customer types, make it easier for novice staff, etc.
 
 Templates can simply be static standard RFC-based zone files, but they can also become "active" by adding ASP style tags (&lt;%...%&gt;), VB.NET code, and custom input fields.
@@ -20,10 +20,10 @@ Templates can simply be static standard RFC-based zone files, but they can also 
 You can add a new template simply by copying and renaming an existing zone file.  
 A simple template like this allows you to easily create new zones with exactly the same layout each time.
 
-First pick an existing zone (or make a new one) that you want to use as a template for new zones.  
+First, pick an existing zone (or make a new one) that you want to use as a template for new zones.  
 Copy the zone file for that zone to the "Templates" directory.
 
-The location of zones files is configured in the Options dialog / DNS / Data Files section. By default this is:  
+The location of zone files is configured in the Options dialog / DNS / Data Files section. By default, this is:  
 Windows Vista/2008: C:\ProgramData\JH Software\Simple DNS Plus\ZoneFiles  
 Earlier Windows versions: C:\Documents and Settings\All Users\Application Data\JH Software\Simple DNS Plus\ZoneFiles
 
@@ -49,12 +49,12 @@ And you will get to the Quick Zone Wizard dialog for the new template:
 
 Enter a zone name, and the wizard will create a new zone exactly like the one you copied the template file from.
 
-If you want your new template to be the default template so you can use it by just hitting the "Quick" button, simply name the template file "_default.dnstp".
+If you want your new template to be the default template, so you can use it by just hitting the "Quick" button, simply name the template file "_default.dnstp".
 
 ### Customizing the Quick Zone Wizard dialog
 
 You can add an introduction text as well as custom input fields to the wizard dialog by adding some special XML code at the top of the template file.  
-For example; open the template file with a text editor, and add the XML shown here:
+For example; open the template file with a text editor and add the XML shown here:
 
 ![](img/116/5.png)
 
@@ -65,7 +65,7 @@ After saving the template file, the Quick Zone Wizard dialog for this template w
 ### Adding input fields
 
 To add input fields to the wizard dialog, you add &lt;INPUT&gt; elements to the XML.  
-You can use the data entered in the input field by adding an ASP style tag &lt;%=input_field_id%&gt; wherever you want the data appear in the zone file:
+You can use the data entered in the input field by adding an ASP style tag &lt;%=input_field_id%&gt; wherever you want the data to appear in the zone file:
 
 ![](img/116/7.png)
 
@@ -110,7 +110,7 @@ For each input field (&lt;INPUT&gt; element) you must specify a "type" attribute
         <td>TEXT</td>
         <td>String</td>
         <td>id, title, value, required</td>
-        <td>A input box which accepts any entry</td>
+        <td>An input box which accepts any entry</td>
     </tr>
     <tr>
         <td>TTL</td>
@@ -133,7 +133,7 @@ For each input field (&lt;INPUT&gt; element) you must specify a "type" attribute
 </table>
 
 IMPORTANT: To ensure proper formatting in the zone file, make sure to use the correct type rather than just using TEXT for everything.  
-For example the DOMAIN type automatically punycodes IDN domain names, adds a trailing dot, etc. which doesn't happen with the TEXT type.
+For example, the DOMAIN type automatically punycodes IDN domain names, adds a trailing dot, etc. which doesn't happen with the TEXT type.
 
 Other &lt;INPUT&gt; element attributes:
 
@@ -184,7 +184,7 @@ If any A-records are missing, it will then ask for their IP addresses and add th
 
 ![](img/116/11.png)
 
-For example if your template has an input field asking for a host name (DOMAIN) for a mail server (MX-record), you won't know if the user enters a host name belonging in the same zone or somewhere else.  
+For example, if your template has an input field asking for a host name (DOMAIN) for a mail server (MX-record), you won't know if the user enters a host name belonging in the same zone or somewhere else.  
 So should you also have an IP address input field for the mail server A-record?  
 No, simply leave it to Simple DNS Plus to ask for the IP address and add an A-record if the host name entered by the users turns out to belong in the same zone.
 

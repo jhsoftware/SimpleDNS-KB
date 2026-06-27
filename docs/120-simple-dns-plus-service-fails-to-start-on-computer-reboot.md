@@ -16,9 +16,9 @@ and/or like this:
 
 > "Timeout (30000 milliseconds) waiting for the Simple DNS Plus service to connect."
 
-Then it may be because your computer is a just too busy at startup - for example if the computer is low on memory and begins swapping to disk.
+Then it may be because your computer is just too busy at startup - for example, if the computer is low on memory and begins swapping to disk.
 
-By default the Windows Service Manager gives a service 30 seconds to start, and then it kills the service process assuming something is wrong.
+By default, the Windows Service Manager gives a service 30 seconds to start, and then it kills the service process assuming something is wrong.
 
 You may be able to get around this issue by overriding the 30 second default with a higher value by setting a Windows registry key.
 
@@ -32,7 +32,7 @@ If it is not already there, create a new DWORD value named "ServicesPipeTimeout"
 
 ![](img/120/2.png)
 
-Double click "ServicesPipeTimeout" and set the value to the number of milliseconds that the Windows Service Manager should wait for services to start. For example decimal 300000 (= 5 minutes):
+Double-click "ServicesPipeTimeout" and set the value to the number of milliseconds that the Windows Service Manager should wait for services to start. For example, decimal 300000 (= 5 minutes):
 
 ![](img/120/3.png)
 

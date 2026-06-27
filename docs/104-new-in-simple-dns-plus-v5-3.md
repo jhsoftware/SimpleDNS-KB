@@ -12,7 +12,7 @@ modified-utc: 2019-01-01
 
 ### ALIAS-records (Auto Resolved Alias)
 
-ALIAS-records are virtual alias records resolved by Simple DNS Plus at at the time of each request - providing "flattened" (no CNAME-record chain) synthesized records with data from a hidden source name.  
+ALIAS-records are virtual alias records resolved by Simple DNS Plus at the time of each request - providing "flattened" (no CNAME-record chain) synthesized records with data from a hidden source name.  
   
 This can be used for different purposes - including solving the classic problem with CNAME-records at the domain apex (for the zone name / for "the naked domain").  
   
@@ -25,8 +25,8 @@ More details at [/kb/2/alias-records-auto-resolved-alias](/kb/2/alias-records-au
 
 ### DNS0x20
 
-For even stronger protection against DNS spoofing, Simple DNS Plus can now randomize the letter casing of the query name of outgoing DNS requests, and only accept responses which correctly echo this.  
-Combined with random request IDs and random port numbers, this makes even harder to "guess" the correct parameters to fake a spoofing response.  
+For even stronger protection against DNS spoofing, Simple DNS Plus can now randomize the letter casing of the query name of outgoing DNS requests and only accept responses which correctly echo this.  
+Combined with random request IDs and random port numbers, this makes it even harder to "guess" the correct parameters to fake a spoofing response.  
 Trivia: In DNS lingo this is called "DNS0X20" - adding/subtracting hex 20 (decimal 32) from a character ASCII code switches between upper/lower case.  
   
 ![](img/104/2.png)  
@@ -42,7 +42,7 @@ This is configured through a "URL prefix" string. For details see [https://msdn.
 ### New authentication options for HTTP API
 
 For enhanced security, we have added two new authentication methods for the HTTP API - "Digest" and "Integrated (NTLM / Kerberos)".  
-We recommend using one of these new methods, when the HTTP API is accessible over the Internet.  
+We recommend using one of these new methods when the HTTP API is accessible over the Internet.  
   
 We have also added an option to authenticate using a Windows user account - utilizing Windows password management.  
   

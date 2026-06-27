@@ -32,7 +32,7 @@ It has an option to control protocol preference (IPv4 / IPv6) on dual-stack comp
 
 ### IDNs (internationalized domain names)
 
-In version 5.0 you can enter domain names with native characters directly (no punycode conversion needed), and have an option to display native character or punycoded domain names anywhere in the user interface, and quickly switch between these modes.
+In version 5.0 you can enter domain names with native characters directly (no punycode conversion needed) and have an option to display native character or punycoded domain names anywhere in the user interface and quickly switch between these modes.
 
 ### New plug-in system
 
@@ -49,22 +49,22 @@ Works with the free Express version as well as full versions of MS SQL Server.
 
 ### Regular Expressions plug-in
 
-Setup your own matching rules using Regular Expressions to pair host domain names to IP addresses.  
+Set up your own matching rules using Regular Expressions to pair host domain names to IP addresses.  
 This gives you much more flexibility than simple wildcard records.  
 [More details...](https://simpledns.plus/plugin-regex)
 
 ### Quick Zone Templates
 
-The "Quick Zone Wizard" (formerly "Quick Domain Wizard") is template based, and supports multiple templates through a drop-down menu on the Quick button. Templates can simply be static standard RFC based zone files, but they can also become "active" by adding ASP style tags (`<%...%>`), VB.NET code, and custom input fields.  
+The "Quick Zone Wizard" (formerly "Quick Domain Wizard") is template-based and supports multiple templates through a drop-down menu on the Quick button. Templates can simply be static standard RFC-based zone files, but they can also become "active" by adding ASP style tags (`<%...%>`), VB.NET code, and custom input fields.  
 [More details...](/kb/116/setting-up-quick-zone-templates)
 
 ### More powerful DNS zone and record management
 
 The "DNS Records" module has new export functions, new bulk update wizard functions, multi-record copy/paste, and much more...
 
-### Many new settings for more fine grained control
+### Many new settings for more fine-grained control
 
-The Options dialog has been re-arranged and has a bunch of new settings for fine tuning your DNS server.
+The Options dialog has been re-arranged and has a bunch of new settings for fine-tuning your DNS server.
 
 
 ### New HTTP API commands and parameters
@@ -81,17 +81,17 @@ The "Cache Snapshot" module loads data much faster, has a new search function, a
 
 ### IP address Look Up / Favorites
 
-All IP address entry fields now have a look up button and a favorites button next to them.
+All IP address entry fields now have a lookup button and a favorite button next to them.
 
-The look up button makes it easy to enter the IP addresses of any existing host name.
+The lookup button makes it easy to enter the IP addresses of any existing host name.
 
-The favorites button makes it easy to use and maintain a simple list of often used  IP addresses.
+The favorite button makes it easy to use and maintain a simple list of often used IP addresses.
 
 ![](img/95/1.png)
 
 ### Works with Windows Server 2008
 
-Simple DNS Plus v. 5.0 runs on all Windows versions and editions from Windows 98 and later including Windows Server 2008.  
+Simple DNS Plus v. 5.0 runs on all Windows versions and editions from Windows 98 and later, including Windows Server 2008.  
 (Previous versions may not run on and are not supported on Windows Server 2008).
 
 ### New RFC and draft support
@@ -99,7 +99,7 @@ Simple DNS Plus v. 5.0 runs on all Windows versions and editions from Windows 98
 - [RFC 2671](http://www.rfc-editor.org/rfc/rfc2671.txt) - Extension Mechanisms for DNS (EDNS0)
 - [RFC 3597](http://www.rfc-editor.org/rfc/rfc3597.txt) - Handling of Unknown DNS Resource Record (RR) Types
 - [RFC 4408](http://www.rfc-editor.org/rfc/rfc4408.txt) - Sender Policy Framework (SPF)
-- [draft-ietf-dnsop-default-local-zones](http://tools.ietf.org/html/draft-ietf-dnsop-default-local-zones) - Locally-served DNS Zones
+- [draft-ietf-dnsop-default-local-zones](http://tools.ietf.org/html/draft-ietf-dnsop-default-local-zones) - Locally served DNS Zones
 
 ### .NET
 

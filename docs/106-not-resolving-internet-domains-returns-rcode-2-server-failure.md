@@ -20,7 +20,7 @@ And if you do the lookup from the command line NSLOOKUP tool, you will most like
 
 ![](img/106/3.png)
 
-This situation is very often caused by firewalls - either a local software firewall on the same computer as Simple DNS Plus, or a hardware based firewall in front of it (anywhere upstream).  
+This situation is very often caused by firewalls - either a local software firewall on the same computer as Simple DNS Plus or a hardware-based firewall in front of it (anywhere upstream).  
 For information on configuring firewalls for use with Simple DNS Plus, please see the [reference article](#kbref) below.
 
 Even if you have opened the firewall ports etc., certain firewalls/routers with older firmware versions (including some Cisco PIX versions) will still block all "EDNS0" enabled DNS requests.  
@@ -34,5 +34,5 @@ To test if EDNS0 is the problem, you can disable this in the Simple DNS Plus Opt
 ![](img/106/4.png)
 
 If Simple DNS Plus resolves Internet domain names after disabling this option, we highly recommend that you update the firmware on your router/firewall and then re-enable the EDNS0 option in Simple DNS Plus.  
-The older firewall/router firmware is probably also blocking inbound EDNS0 enabled DNS requests - potentially preventing visitors from getting to your web-site etc.
+The older firewall/router firmware is probably also blocking inbound EDNS0 enabled DNS requests - potentially preventing visitors from getting to your website etc.
 

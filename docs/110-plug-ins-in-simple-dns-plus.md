@@ -32,20 +32,20 @@ The first input field is the **Plug-in instance display name**, which is the nam
 
 **The "Plug-in Settings" tab**
 
-The content of this tab is defined by the each individual plug-in type (this tab is not available for plug-ins which do not have any unique settings):
+The content of this tab is defined by each individual plug-in type (this tab is not available for plug-ins which do not have any unique settings):
 
 ![](img/110/3.png) 
 
 **The "DNS Requests" tab**
 
-On this tab you can limit which DNS requests are processed by the plug-in (this tab is not available for plug-ins which do not handle DNS requests).
+In this tab you can limit which DNS requests are processed by the plug-in (this tab is not available for plug-ins which do not handle DNS requests).
 
 ![](img/110/4.png)
 
-By default all DNS requests are processed by the plug-in, but if the plug-in does a lot of work for each request (such as database lookups) it might by a good idea to limit this to specific domains, IP ranges, record types, etc. in order to optimize performance.
+By default, all DNS requests are processed by the plug-in, but if the plug-in does a lot of work for each request (such as database lookups), it might be a good idea to limit this to specific domains, IP ranges, record types, etc. in order to optimize performance.
 
 You can set "Process DNS requests" to either "Always", "Never", or "Only when...".\
-With the "Only when..." option, you can configure a list of "rules" which determine what DNS requests are process or not.\
+With the "Only when..." option, you can configure a list of "rules" which determine what DNS requests are processed or not.\
 Available "rules" are:
 
 - Sender's IP address
@@ -79,12 +79,12 @@ Available "rules" are:
 
 You can reverse the result of a selected rule by clicking the [Not] button.
 
-Rules are evaluated in the listed order - you can re-arrage this using the Up/Down buttons.
+Rules are evaluated in the listed order - you can re-arrange this using the Up/Down buttons.
 
 **The "Listed IPs" tab**
 
 On this tab you can set options for listed IP addresses (this tab is not available for plug-ins which do not "list" IP addresses).
-(Note to developers: ths option is enabled for plug-ins that implement the IListsIPAddress interface).
+(Note to developers: this option is enabled for plug-ins that implement the IListsIPAddress interface).
 
 ![](img/110/5.png)
 
@@ -93,7 +93,7 @@ When enabled, Simple DNS Plus will resolve DNS requests received from IP address
 
 - **Whitelist IP addresses listed by this plug-in from all DNSBLs**\
 When enabled, Simple DNS Plus will respond to any DNS request for A-records for names starting with a reversed IP address, that is listed by this plug-in, with a "name does not exist" error code.\
-When a client computer (who's IP address is listed by this plug-in) sends an e-mail to a local e-mail server which is using this same Simple DNS Plus server, and this e-mail server looks up the sender's IP address (the client computer) in some DNSBL list, this option ensures that the result is always "not black listed".\
+When a client computer (whose IP address is listed by this plug-in) sends an e-mail to a local e-mail server which is using this same Simple DNS Plus server, and this e-mail server looks up the sender's IP address (the client computer) in some DNSBL list, this option ensures that the result is always "not black listed".\
 This can be useful because dynamic IP address ranges are often black listed as e-mail senders.
 
 
@@ -115,11 +115,11 @@ Some of the benefits of this model are:
 - Simpler user interface; settings for un-used plug-ins are not in the way.
 - Allows us to implement new features without touching the core DNS server code.
 - Less memory usage; only selected plug-in modules are loaded into memory.
-- Smaller attack surface; evil doers can't attack plug-ins that aren't loaded.
+- Smaller attack surface; evildoers can't attack plug-ins that aren't loaded.
 - Great for asynchronous lookups; a plug-in lookup can run asynchronously not holding up other DNS requests.
 - Allows users and 3rd parties to develop their own plug-ins (see [this article](/kb/31/))
 - Allows separate distribution of selected plug-in modules and required libraries (reducing size of main installer).
 
 ### Open Architecture
 
-The plug-in architecture open for users and 3rd parties interested in developing their own plug-ins. Please see [this article](/kb/31/) for details.
+The plug-in architecture is open for users and 3rd parties interested in developing their own plug-ins. Please see [this article](/kb/31/) for details.

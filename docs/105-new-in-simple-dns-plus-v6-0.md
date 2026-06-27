@@ -26,7 +26,7 @@ With a single version selected, click the "Restore" button to restore that versi
 
 ![](img/105/2.png)
 
-In the Options dialog there is a new DNS / Local Zones / Zone Versions section. Here you can specify the number of versions to retain.
+In the Options dialog, there is a new DNS / Local Zones / Zone Versions section. Here you can specify the number of versions to retain.
 
 ![](img/105/3.png)
 
@@ -62,7 +62,7 @@ In the DNS Records window, from the "File" menu, select "Export...", then select
 
 ### Export/import plug-in configuration
 
-Typically plug-ins need to be configured the same way on primary and secondary servers, and some plug-ins have very complex configurations.  
+Typically, plug-ins need to be configured the same way on primary and secondary servers, and some plug-ins have very complex configurations.  
 It is now easy to copy a plug-in instance configuration from Simple DNS Plus on one server to another.  
 In the plug-in instances dialog (also new in this version - see below), click the "Export" button. This will copy the configuration of the selected plug-in instance to the Windows clipboard (XML format). Then Remote Desktop into the other Simple DNS Plus server, and click the "Import" button there, and a new plug-in instance will be created there with the same settings:
 
