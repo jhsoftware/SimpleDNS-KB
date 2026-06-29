@@ -9,15 +9,15 @@ modified-utc: 2021-09-19
 
 DNS over TLS (DoT) / DNS over HTTPS (DoH) are ways to encrypt DNS queries and responses between a user's device and the resolving DNS server. For more on this see [New in Simple DNS Plus v. 9.0](/kb/194).
 
-Configuring this in IOS (v. 14 or later), requires installing a "configuration profile" file (a file with a ".mobileconfig" extenion), containing data about the DNS server(s) to use.
+Configuring this in IOS (v. 14 or later) requires installing a "configuration profile" file (a file with a ".mobileconfig" extenion), containing data about the DNS server(s) to use.
 
-Various DNS service providers (such as Google, Cloudflare, etc.) provide such files on their web-sites.
+Various DNS service providers (such as Google, Cloudflare, etc.) provide such files on their websites.
 
 You can generate such a file for your own DNS servers at <https://simpledns.plus/apple-dot-doh>
 
 Note: It is important that you do this in the **Safari browser** as it may not work with other browsers.
 
-Enter you company name, select the protocol (DoT or DoH), enter you DNS server host name or query URL, and the DNS server IP addresses, click the Download button:
+Enter your company name, select the protocol (DoT or DoH), enter your DNS server host name or query URL, and the DNS server IP addresses, click the Download button:
 
 ![](img/202/ipad1.png)
 
@@ -29,7 +29,7 @@ Safari will prompt you "Profile downloaded". Click "Close":
 
 ![](img/202/ipad3.png)
 
-From the home screen open the Settings app:
+From the home screen, open the Settings app:
 
 ![](img/202/ipad4.png)
 

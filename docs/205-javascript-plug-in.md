@@ -162,7 +162,7 @@ Just like in a browser, you may use `console.log('some text')` to output debuggi
 
 ### Debugging
 
-When debugging is enabled (see "User interface" section above), you can connect a debugger which supports the "V8 Inspector Protocol". For example the Chrome browser developer tools.
+When debugging is enabled (see "User interface" section above), you can connect a debugger which supports the "V8 Inspector Protocol". For example, the Chrome browser developer tools.
 
 In Chrome, open the address <chrome://inspect>, select the "Devices" section (should be selected by default), and look for "sdnsmain.exe", and click the "inspect" link after this.
 
@@ -172,11 +172,11 @@ Note that if you used a debugging port number other than 9222, then you need to 
 
 This will open a "DevTools" Window.
 
-When a debugging event happens (like an exception), you can inspect the code, variable values, call stack etc. just like when debugging JavaScript in a web-page in the Chrome browser DevTools.
+When a debugging event happens (like an exception), you can inspect the code, variable values, call stack, etc. just like when debugging JavaScript in a web-page in the Chrome browser DevTools.
 
 ![](img/205/chrome2.png)
 
 TIP: Insert a "debugger" statement in your JavaScript code to force the debugger to pause execution.
 
-Note that when the plug-in is restarted, for example when the JavaScript code is updated, you will need to re-connect the DevTools.
+Note that when the plug-in is restarted, for example, when the JavaScript code is updated, you will need to re-connect the DevTools.
 

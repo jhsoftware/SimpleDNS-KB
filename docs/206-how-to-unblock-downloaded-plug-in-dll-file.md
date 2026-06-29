@@ -8,7 +8,7 @@ modified-utc: 2021-10-30
 ---
 # How to unblock downloaded plug-in .dll file
 
-On recent Windows versions, downloaded .dll files (including those from .zip files), need to be "un-blocked" before they can be executed.
+On recent Windows versions, downloaded .dll files (including those from .zip files) need to be "un-blocked" before they can be executed.
 
 When you have downloaded a plug-in and unzipped it into the "Plugins" sub-folder of the folder where Simple DNS Plus is installed, in File Explorer right-click the .dll file and select "Properties" from the pop-up menu:
 

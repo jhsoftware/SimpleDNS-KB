@@ -27,9 +27,9 @@ The server TCP port that connections should be forwarded to.
 - **Max. connections**  
 The maximum number of connections that can be forwarded at the same time.
 - **Idle time-out**  
-If enabled, the connection will be closed if no data has been sent in either direction for this legth of time.
+If enabled, the connection will be closed if no data has been sent in either direction for this length of time.
 
-TheTCP Port Forwarder plug-in also has a "view" in the main Simple DNS Plus window (open from View menu), where you can see current and total number of connections, and the total bytes transferred:
+TheTCP Port Forwarder plug-in also has a "view" in the main Simple DNS Plus window (open from View menu), where you can see the current and total number of connections, and the total bytes transferred:
 
 ![](img/188/2.png)
 
@@ -37,5 +37,5 @@ The Simple DNS Plus log (Active Log View and log files) will show when individua
 
 ![](img/188/3.png)
 
-Note that this plug-in does not provide any DNS records or any other functionality related to directly to DNS. But you can of course point domain names to the IP address that the plug-in listens for connections on, using A-records provided through local zones or other plug-ins.
+Note that this plug-in does not provide any DNS records or any other functionality related to directly to DNS. But you can, of course, point domain names to the IP address that the plug-in listens for connections on, using A-records provided through local zones or other plug-ins.
 

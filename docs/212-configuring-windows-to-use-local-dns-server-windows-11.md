@@ -18,7 +18,7 @@ Then in the "Settings" window, click your primary network connection:
 
 ![](img/212/2.png)
 
-Scoll down to "DNS server assignment" and click the "Edit" button:
+Scroll down to "DNS server assignment" and click the "Edit" button:
 
 ![](img/212/3.png)
 

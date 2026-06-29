@@ -10,7 +10,7 @@ modified-utc: 2023-10-01
 ### Export Boot file / Active Directory zones from Microsoft DNS server
 
 This tool is especially useful if you have a large number of DNS zones stored in 
-Active Directory and need to export these - for example for backup or for migration
+Active Directory and need to export these - for example, for backup or for migration
 to another DNS server platform.
 
 ![screen shot](img/211/screenshot.png)
@@ -29,7 +29,7 @@ typically 'c:\windows\system32\dns'.
 
 * None of your DNS zones are stored in Active Directory. In this case you can simply
 configure Microsoft DNS server to 'load from file' 
-(DNS Server managements console / Server Properties dialog / Advanced tab / Load zone data on startup / From file) -
+(DNS Server management console / Server Properties dialog / Advanced tab / Load zone data on startup / From file) -
 which will generate a standard boot file.
 * You only need to export a few zones from Active Directory. In this case just use 
 `dnscmd.exe /ZoneExport <zone-name> <file-name>`
@@ -45,11 +45,11 @@ be used for any purpose.
 * Windows Server 2003 or later with Microsoft's DNS server feature enabled.
 * .NET Framework v. 2.0 / 3.5
   * On Windows Server 2003 this can be downloaded [from here](https://www.microsoft.com/en-us/download/details.aspx?id=1639).
-  * On Windows Server 2008 and later this is a Windows features which can be enabled through Server Manager, Control Panel, etc.
+  * On Windows Server 2008 and later this is a Windows feature which can be enabled through Server Manager, Control Panel, etc.
 * For exporting zones stored in Active Directory: the "dnscmd.exe" tool. 
   * On Windows Server 2003 this is part of the "Windows Support Tools" which can be found on the Windows installation CD - 
 [instructions here](https://technet.microsoft.com/en-us/library/cc755948(v=ws.10).aspx).
-  * On Windows Server 2008 and later it is installed automatically when the DNS Server feature is enabled.
+  * On Windows Server 2008 and later, it is installed automatically when the DNS Server feature is enabled.
 
 ### Download / Installation
 

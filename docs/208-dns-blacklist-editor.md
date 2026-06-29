@@ -7,7 +7,7 @@ modified-utc: 2026-05-05
 ---
 # DNS Blacklist Editor
 
-The "DNS Blacklist Editor" is a freeware tool which can be used to create and/or maintain IP based DNS blacklists.
+The "DNS Blacklist Editor" is a freeware tool which can be used to create and/or maintain IP-based DNS blacklists.
 
 DNS blacklists (a.k.a. "RBL" and "DNSBL") are typically used with e-mail servers to
  filter out spam and other unwanted e-mails.  
@@ -23,12 +23,12 @@ For more details on this concept and its history, please see
 - **Opens most publicly available DNS blacklist files**  
 This includes blacklist files formatted for Michael Tokarev's [RBLDNSD](http://www.corpit.ru/mjt/rbldnsd.html) (\*) and for D.J.Bernstein's [RBLDNS](http://cr.yp.to/djbdns/rbldns-data.html).  
 (\*) This tool only implements a subset (the most commonly used features) of the RBLDNSD file format.  
-Specifically it does not support name based lists, generic DNS record entries, nor "$" special entries (skipped if encountered).
+Specifically, it does not support name-based lists, generic DNS record entries, nor "$" special entries (skipped if encountered).
 
 - **Saves dataset files in the RBLDNSD format - optimized for file size**  
 You can use files from this tool with RBLDNSD and any other software supporting this commonly used file format.  
 Blacklist entries are grouped by return values so that each unique return value set (A/TXT) 
-only appear once in the entire file, making the file as small as possible.
+only appears once in the entire file, making the file as small as possible.
 
 - **Find IP address**  
 Quickly find blacklist entries containing a specific IP address, even if the IP address is in the middle of an IP subnet or IP range.  
@@ -40,7 +40,7 @@ The QuickSort algorithm is used for sorting, so this is blazing fast even with m
 *Not possible with generic text editor*.
 
 - **Merging**
-One step function to merge all neighboring/overlapping entries with identical return values (A/TXT).  
+One-step function to merge all neighboring/overlapping entries with identical return values (A/TXT).  
 This can reduce the size of some blacklists very dramatically.  
 *Not possible with generic text editor*.
 

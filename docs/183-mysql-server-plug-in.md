@@ -11,7 +11,7 @@ modified-utc: 2020-01-08
 This plug-in queries a [MySQL Server](http://www.mysql.com/){target=_blank} for host records and optionally reverse records.  
 SQL queries are executed asynchronously (in a separate thread) and therefore won't slow down other requests not using the plug-in.
 
-In the plug-in instance dialog / Plug-In Settings tab you can specify the database connection string and SQL SELECT statements to be used to fetch records:
+In the plug-in instance dialog / Plug-In Settings tab, you can specify the database connection string and SQL SELECT statements to be used to fetch records:
 
 ![](img/183/1.png)
 
@@ -33,6 +33,6 @@ The column names of the returned data do not matter - only the column order.
 
 If there are more than one row or more than two columns returned, additional rows and columns are ignored.
 
-NOTE: This plug-in is uses the MySQL "Connector/Net 5.0" component v. 5.0.8.1 (included with the plug-in download).  
+NOTE: This plug-in uses the MySQL "Connector/Net 5.0" component v. 5.0.8.1 (included with the plug-in download).  
 For details see [http://dev.mysql.com/downloads/connector/net/5.0.html](http://dev.mysql.com/downloads/connector/net/5.0.html){target=_blank}
 

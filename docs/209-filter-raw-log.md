@@ -7,7 +7,7 @@ modified-utc: 2023-10-01
 ---
 # Filter Raw Log
 
-Command line tool which parses a raw log file (.sdraw) from [Simple DNS Plus](https://simpledns.plus) (v. 5.0 and later), filters and summarizes the data, and writes the result to a text file as comma separated values (csv format). The data can be summarized either by zone, query name (qname), query type (qtype), request source IP address (fromip), or by hour.
+Command line tool which parses a raw log file (.sdraw) from [Simple DNS Plus](https://simpledns.plus) (v. 5.0 and later), filters and summarizes the data, and writes the result to a text file as comma-separated values (csv format). The data can be summarized either by zone, query name (qname), query type (qtype), request source IP address (fromip), or by hour.
 
 This tool uses and includes the ["Simple DNS Plus - Raw Log Library"](https://github.com/jhsoftware/SDNSRawLogDLL)
 

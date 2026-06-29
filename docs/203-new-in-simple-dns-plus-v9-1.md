@@ -29,7 +29,7 @@ The JavaScript code can be as simple or complex as needed - for example:
 ![](img/203/js4.png)
 
 
-The plug-in supports storing the JavaScript code in a separate file (optional), which lets you edit the code in the editor of your choice - for example Visual Studio Code to get JavaScript syntax highlighting etc.
+The plug-in supports storing the JavaScript code in a separate file (optional), which lets you edit the code in the editor of your choice - for example, Visual Studio Code to get JavaScript syntax highlighting etc.
 
 ![](img/203/js2.png)
 
@@ -49,7 +49,7 @@ This improves performance by allowing simple plug-ins (like "Fixed IP address") 
 
 The new plug-in interface also shares more code with the main Simple DNS Plus program, so that fewer conversions are needed when communicating between the plug-in and the program, which also improves performance.
 
-Plug-ins included with the Simple DNS Plus installer are updated automatically, but you will need to download new versions of any downloadable plug-ins (v. 9.1 updates have been published for all of them), and any custom developed plug-ins will need to be [re-programmed](/kb/31) to work with the new interface.
+Plug-ins included with the Simple DNS Plus installer are updated automatically, but you will need to download new versions of any downloadable plug-ins (v. 9.1 updates have been published for all of them), and any custom-developed plug-ins will need to be [re-programmed](/kb/31) to work with the new interface.
 
 
 ### Plug-in query order enhanced{#piorder}

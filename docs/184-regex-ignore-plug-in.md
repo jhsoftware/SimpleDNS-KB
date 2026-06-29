@@ -16,13 +16,13 @@ Another example is simple parental control - blocking domain names containing ba
 
 Regular expressions are compiled when Simple DNS Plus loads the plug-in instance and are therefore evaluated very efficiently.
 
-In the plug-in instance dialog / Plug-In Settings tab you can specify the regular expression to match:
+In the plug-in instance dialog / Plug-In Settings tab, you can specify the regular expression to match:
 
 ![](img/184/1.png)
 
 The sample in the screenshot would match and ignore any requests for domain names containing 'xxx'.
 
 Keep in mind that the dot (.) character has special meaning in regular expressions (matches any character), so when matching multi-segment domains names, the domain name dots must be enclosed in square brackets [.].  
-For example to match exactly "something.example.com", the regular expression would be "^something[.]example[.]com$" without the quotes.  
+For example, to match exactly "something.example.com", the regular expression would be "^something[.]example[.]com$" without the quotes.  
 The regular expression equivalent to the wildcard record name "*.example.com" is ".*[.]example[.]com$".
 

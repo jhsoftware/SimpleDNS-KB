@@ -13,9 +13,9 @@ This plug-in is used to skip other plug-in instances when processing DNS request
 This is typically used to apply one or more conditions (in the "DNS Requests" tab) to several other plug-ins at the same time.
 
 This plug-in is different than other plug-ins in that it does not fetch or provide any DNS records directly.  
-Instead it instructs Simple DNS Plus to skip some or all of the following plug-in instances (listed in the Simple DNS Plus Options dialog / Plug-Ins section) - when the conditions in the "DNS Requests" tab are met.
+Instead, it instructs Simple DNS Plus to skip some or all of the following plug-in instances (listed in the Simple DNS Plus Options dialog / Plug-Ins section) - when the conditions in the "DNS Requests" tab are met.
 
-In the plug-in instance dialog / Plug-In Settings tab you can specify how many of the following plug-in instances to skip:
+In the plug-in instance dialog / Plug-In Settings tab, you can specify how many of the following plug-in instances to skip:
 
 ![](img/186/1.png)
 
