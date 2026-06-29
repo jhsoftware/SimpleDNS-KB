@@ -8,7 +8,7 @@ modified-utc: 2021-10-29
 ---
 # DHCP Server plug-in
 
-This plug-in is a DHCP server which provides IPv4 addresses and settings to local computers and devices. The DHCP data is also used to serve DNS requests (forward and reverse) making it very simple to locate any local DHCP client by name on a local network.
+This plug-in is a DHCP server which provides IPv4 addresses and settings to local computers and devices. The DHCP data is also used to serve DNS requests (forward and reverse), making it very simple to locate any local DHCP client by name on a local network.
 
 On the "Plug-In Settings" tab, enter the DHCP settings to be used (explained below):
 
@@ -31,11 +31,11 @@ Click this button to configure DHCP reservations (see below).
 - **Update host records (A) in local forward zones**  
 When checked, Simple DNS Plus will create/update an A-record for each new/updated DHCP lease.  
 Requires a local forward primary zone for the DNS suffix or a parent name.  
-This is only needed if you have multiple DNS servers hosting the DNS suffix and you want A-records for the DHCP leases automatically transferred to secondary DNS servers.
+This is only needed if you have multiple DNS servers hosting the DNS suffix, and you want A-records for the DHCP leases automatically transferred to secondary DNS servers.
 - **Update reverse records (PTR) in local reverse zones**  
 When checked, Simple DNS Plus will create/update a PTR-record for each new/updated DHCP lease.  
 Requires a local reverse primary zone for the IP addresses assigned by the DHCP service.  
-This is only needed if you have multiple DNS servers hosting reverse DNS for the IP address range and you want PTR-records for the DHCP leases automatically transferred to secondary DNS servers.
+This is only needed if you have multiple DNS servers hosting reverse DNS for the IP address range, and you want PTR-records for the DHCP leases automatically transferred to secondary DNS servers.
 
 ### DHCP Options dialog
 
@@ -44,7 +44,7 @@ The DHCP Options dialog can be accessed in 3 ways - from the main DHCP Plug-in d
 - **Lease Period tab**  
 Specify how long DHCP clients are allowed to use their assigned IP address.  
 This is the maximum time the client computer may use the IP address without getting the lease renewed.  
-Typically after half the lease period has elapsed, the client computer will attempt to renew the lease.
+Typically, after half the lease period has elapsed, the client computer will attempt to renew the lease.
 
 ![](img/169/2.png)
 - **IP routing tab**  
@@ -64,14 +64,14 @@ An example of this is provided in [How to serve a network based Debian Linux ins
 ### DHCP Reservations dialog (list of reservations)
 
 Reserve IP addresses for specific clients based on computer/device name or hardware address (network card MAC address).  
-To determine a computers hardware address on Windows NT4/2000 and later, run "IPCONFIG /ALL" from a command prompt, and see "Physical Address".
+To determine a computer's hardware address on Windows NT4/2000 and later, run "IPCONFIG /ALL" from a command prompt and see "Physical Address".
 
 ![](img/169/6.png)
 
 ### DHCP Reservation dialog (individual reservation)
 
 For each reservation, you can specify an alternate set of options - either for the individual reservation or for a group of reservations.  
-For MAC based reservations, you can optionally specify a host name that will be assigned to the client (through the DHCP response and in local DNS data).
+For MAC-based reservations, you can optionally specify a host name that will be assigned to the client (through the DHCP response and in local DNS data).
 
 ![](img/169/7.png)
 
@@ -83,11 +83,11 @@ The DHCP Server plug-in also has a "view" in the main Simple DNS Plus window (op
 
 The list can be sorted by clicking the column headers.
 
-To manually delete a DHCP lease, right click on the lease and select "Delete" from the pop-up menu. In order to prevent IP-address conflicts (two or more computers having the same address), it is important that the computer for the deleted lease is also rebooted or removed from the network.  
+To manually delete a DHCP lease, right-click on the lease and select "Delete" from the pop-up menu. To prevent IP-address conflicts (two or more computers having the same address), it is important that the computer for the deleted lease is also rebooted or removed from the network.  
 Generally, it is not necessary to delete leases manually, as computers automatically release their leases when shut down properly.
 
 Older Apple/Mac clients and some devices which do not supply a computer name in the DHCP request will show with their hardware address as the name.  
-To rename these, right click on the lease and select "Rename". The new name will be associated with the client's hardware address (MAC), and remembered as long as you run Simple DNS Plus even if the IP address changes.
+To rename these, right-click on the lease and select "Rename". The new name will be associated with the client's hardware address (MAC) and remembered as long as you run Simple DNS Plus even if the IP address changes.
 
 To configure a Windows computer to get its IP address from a DHCP server, configure it to "Obtain an IP address automatically" in TCP/IP protocol settings (under network properties).
 

@@ -12,7 +12,7 @@ This plug-in queries a Microsoft SQL Server for host records and optionally reve
 
 SQL queries are executed asynchronously (in a separate thread) and therefore won't slow down other requests not using the plug-in.
 
-In the plug-in instance dialog / Plug-In Settings tab you can specify the database connection string and SQL SELECT statements to be used to fetch records:
+In the plug-in instance dialog / Plug-In Settings tab, you can specify the database connection string and SQL SELECT statements to be used to fetch records:
 
 ![](img/181/1.png)
 
@@ -26,13 +26,13 @@ There are no specific requirements for database table layout. You just need to b
 
 For forward lookups (name to IP) you need to include a @hostname parameter in the SELECT statement, and the query must return two columns; IP-address and TTL as the first and second columns.
 
-For reverse lookups (IP to name) you need to include a @ipaddress parameter in the SELECT statement, and the query must return two columns; host-name and TTL as the first and second columns.
+For reverse lookups (IP to name) you need to include an @ipaddress parameter in the SELECT statement, and the query must return two columns; host-name and TTL as the first and second columns.
 
-For either type of lookups (forward/reverse), you may optionally include a @clientip parameter which will contain the IP address of the client requesting the data.
+For either type of lookups (forward/reverse), you may optionally include a @clientip parameter, which will contain the IP address of the client requesting the data.
 
 The column names of the returned data do not matter - only the column order.
 
 If there are more than one row or more than two columns returned, additional rows and columns are ignored.
 
-NOTE: Serving data from directly from a SQL server with this plug-in can be very powerful, but keep in mind that querying a SQL server will never be as fast as serving DNS records directly from RAM, as Simple DNS Plus does when serving data from local zones. Therefore we recommend that you limit plug-in queries to only those specific domains that you have stored in SQL.
+NOTE: Serving data from directly from a SQL server with this plug-in can be very powerful, but keep in mind that querying a SQL server will never be as fast as serving DNS records directly from RAM, as Simple DNS Plus does when serving data from local zones. Therefore, we recommend that you limit plug-in queries to only those specific domains that you have stored in SQL.
 

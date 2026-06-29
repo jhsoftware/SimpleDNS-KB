@@ -8,10 +8,10 @@ modified-utc: 2019-01-01
 ---
 # Using OpenDNS.com with Simple DNS Plus
 
-[OpenDNS.com](http://www.opendns.com){target=_blank} is a large scale DNS caching system which provides added benefits like phishing protection, adult site blocking, faster DNS look ups, automatic correction of URL typos, and more.  
+[OpenDNS.com](http://www.opendns.com){target=_blank} is a large-scale DNS caching system which provides added benefits like phishing protection, adult site blocking, faster DNS look ups, automatic correction of URL typos, and more.  
 You can use OpenDNS.com with Simple DNS Plus by adding their DNS servers to the forwarding list.
 
-In the main window of Simple DNS Plus, from the "Tools" menu select "Options...":
+In the main window of Simple DNS Plus, from the "Tools" menu, select "Options...":
 
 ![](img/128/1.gif)
 
@@ -19,7 +19,7 @@ In the Options dialog, in the left list select "Forwarding", then click the "Add
 
 ![](img/128/2.gif)
 
-In the DNS Forwarding dialog, leave the "Domain name" field blank, and click the "Add" button:
+In the DNS Forwarding dialog, leave the "Domain name" field blank and click the "Add" button:
 
 ![](img/128/3.gif)
 
@@ -31,12 +31,12 @@ Repeat for 208.67.220.220:
 
 ![](img/128/5.gif)
 
-Back in the "DNS Forwarding" dialog you should now have both IP addresses 208.67.222.222 and 208.67.220.220 listed.  
+Back in the "DNS Forwarding" dialog, you should now have both IP addresses 208.67.222.222 and 208.67.220.220 listed.  
 Click the OK button:
 
 ![](img/128/6.gif)
 
-And back in the "Options dialog" you should now see and entry for "&lt;all&gt;" with the OpenDNS.com DNS servers.  
+And back in the "Options dialog" you should now see an entry for "&lt;all&gt;" with the OpenDNS.com DNS servers.  
 Click the "OK" button.
 
 ![](img/128/7.gif)

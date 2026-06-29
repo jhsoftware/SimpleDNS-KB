@@ -21,7 +21,7 @@ This is not configurable in any way.
 If the computer sharing the Internet connection has two network cards with fixed IP addresses (one for the Internet and one for the local area network), configure Simple DNS Plus to listen on the Internet IP address only.  
 Otherwise configure Simple DNS Plus to listen on 127.0.0.1 only.
 
-In the Simple DNS Plus main window click the "Options" button:
+In the Simple DNS Plus main window, click the "Options" button:
 
 ![](img/132/1.png)
 
@@ -33,8 +33,8 @@ Select "Inbound Requests" in the left list, select "On the IP addresses checked 
 
 If the computer sharing the Internet connection has two network cards with fixed IP addresses (one for the Internet and one for the local area network), configure Simple DNS Plus to listen on the Internet IP address only (see above).
 
-Unfortunately you cannot run Simple DNS Plus on a Windows Me computer with ICS enabled if you do not have a fixed Internet IP address.  
-Listening for DNS requests only on 127.0.0.1 (like with later Windows version - see above) doesn't work because ICS on Windows Me blocks this.  
+Unfortunately, you cannot run Simple DNS Plus on a Windows Me computer with ICS enabled if you do not have a fixed Internet IP address.  
+Listening for DNS requests only on 127.0.0.1 (like with later Windows versions - see above) doesn't work because ICS on Windows Me blocks this.  
 And you cannot disable the ICS DNS proxy and DHCP server either (like in Windows 98se - see below).
 
 **<u>Workaround for Windows 98se (Second Edition)</u>**

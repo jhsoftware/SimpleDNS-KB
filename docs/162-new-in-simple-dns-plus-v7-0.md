@@ -41,11 +41,11 @@ The original HTTP API (v. 1) is still included in this version of Simple DNS Plu
 
 ### HTTP API - CORS support{#cors}
 
-[CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) allows a web-page running in a browser to access resources hosted on a different web-site (diffent host name / port).
+[CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) allows a web-page running in a browser to access resources hosted on a different website (different host name / port).
 
-Enabling this new option, allows you to access the Simple DNS Plus HTTP API with javascript on a web-page.
+Enabling this new option allows you to access the Simple DNS Plus HTTP API with JavaScript on a web-page.
 
-This enables some new possible uses of the HTTP API - such as building a HTTP based admin UI.
+This enables some new possible uses of the HTTP API - such as building an HTTP-based admin UI.
 
 ![](img/162/1.png)
 

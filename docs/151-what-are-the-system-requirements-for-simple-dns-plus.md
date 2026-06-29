@@ -41,10 +41,10 @@ Windows 7 (SP1+) / Windows Server 2008 R2 (SP1+) or later.
 		</tr>
 		<tr>
 			<td style="vertical-align:top">Internet IP address:</td>
-			<td style="white-space:wrap">You need a static (*) Internet IP address only if you want to use Simple DNS Plus for hosting domain names on the Internet. A dynamic IP address can be used for a resolving and caching Internet domain names.</td>
+			<td style="white-space:wrap">You need a static (*) Internet IP address only if you want to use Simple DNS Plus for hosting domain names on the Internet. A dynamic IP address can be used for resolving and caching Internet domain names.</td>
 		</tr>
 </table>
 
 (*) By "static" we mean an IP address which does not change, or only very seldom changes.\
 It doesn't matter how the IP address is assigned to your computer/router (manually or dynamically).\
-Many "always-on" Internet connections such as cable and ADSL connections provide an Internet IP address which never actually change even if it is supposed be be "dynamic". Such an IP address can be considered "static" and works fine for hosting domain names.
+Many "always-on" Internet connections such as cable and ADSL connections provide an Internet IP address which never actually change even if it is supposed be "dynamic". Such an IP address can be considered "static" and works fine for hosting domain names.

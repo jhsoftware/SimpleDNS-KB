@@ -9,7 +9,7 @@ modified-utc: 2019-01-01
 # Using DirectUpdate with Simple DNS Plus
 
 > [!NOTE] This article was written before we released the [DynDNS Service plug-in](https://simpledns.plus/plugin-dyndns).  
-DirectUpdate can also be used with the DynDNS Service plug-in making it even easier to run a DynDNS service
+DirectUpdate can also be used with the DynDNS Service plug-in, making it even easier to run a DynDNS service
 
 DirectUpdate is a product by William Levra-Juillet - available from [download.cnet.com](https://download.cnet.com/directupdate/3000-2150_4-10070459.html){target=_blank} and other download sites.
 
@@ -22,23 +22,23 @@ In the following example, we have a roaming laptop with a dynamic IP address (cu
 
 Step 1: First, you need to set up a zone that will hold the DNS record for the laptop (the dynamic IP computer). See [this article](/kb/4/basic-dns-server-configuration-example). If you have already set up a zone for your domain name, you can use that.
 
-Step 2: Next you need to set up a TSIG key (basically a user name / password pair) for the laptop.
+Step 2: Next, you need to set up a TSIG key (basically a username / password pair) for the laptop.
 
 In the main window of Simple DNS Plus, click the Options button:
 
 ![](img/125/1.png)
 
-In the Options dialog, under "DNS" select "TSIG Dynamic Updates", and click the "Add..." button:
+In the Options dialog, under "DNS" select "TSIG Dynamic Updates" and click the "Add..." button:
 
 ![](img/125/2.png)
 
 Enter a key name, a key value, and specify which domain(s) the client with this key may update.  
-The key name can be whatever you find convenient - for example the name of the client computer or the person using it.  
+The key name can be whatever you find convenient - for example, the name of the client computer or the person using it.  
 The key value is basically a binary password entered in base64 encoding. You can click the "Generate" button to automatically create a new random value of either 128, 256, or 512 bit length:
 
 ![](img/125/3.png)
 
-When done click the "OK" button, and also click the "OK" button in the previous dialog to save your settings.
+When done, click the "OK" button and also click the "OK" button in the previous dialog to save your settings.
 
 Step 3: Setup DirectUpdate on the laptop.
 
@@ -47,7 +47,7 @@ Right-click the tray icon and from the pop-up menu select "Launch admin now..." 
 
 ![](img/125/4.png)
 
-In the "administration module", select "DNS accounts", and click the "Add..." button:
+In the "administration module", select "DNS accounts" and click the "Add..." button:
 
 ![](img/125/5.png)
 
@@ -55,14 +55,14 @@ In the "administration module", select "DNS accounts", and click the "Add..." bu
 \- Un-check "Disable/ignore this account".  
 \- Make sure "Perform updates using secure protocol" is checked.  
 \- In IP Detection to use select "Default IP detection".  
-\- In the "TSIG key name" fiield, copy the key name used in Simple DNS Plus.  
+\- In the "TSIG key name" field, copy the key name used in Simple DNS Plus.  
 \- In the "TSIG secret" field, copy the key value used in Simple DNS Plus.  
 \- In the "Domain / host" field, enter the host name you want to update.  
 \- In the "Server" field, enter the host name or IP address of your Simple DNS Plus server.
 
 ![](img/125/6.png)
 
-When everything is setup correctly, DirectUpdate will now update Simple DNS Plus.  
+When everything is set up correctly, DirectUpdate will now update Simple DNS Plus.  
 If you select "DNS accounts", you should see the Status as "OK":
 
 ![](img/125/7.png)

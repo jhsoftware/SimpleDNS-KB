@@ -26,7 +26,7 @@ No, only one license can be used at a time.
 
 If you need to host more zones, you need to upgrade the license to a larger size.
 
-### What versions/releases are a license is valid for?
+### What versions/releases is a license valid for?
 
 1) The current version at the time of purchase (new or upgrade).
 2) Any versions (major/minor\*) released within one year after the purchase (see "one year free upgrade protection" below).

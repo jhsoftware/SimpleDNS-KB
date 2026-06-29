@@ -14,7 +14,7 @@ modified-utc: 2019-01-01
 NOTE: You can also the web redirection and cloaking using the [HTTP Redirector plug-in](https://simpledns.plus/plugin-httpredir).
 
 Some ISPs offer "web redirection" service, where they will redirect web-requests for your domain name to another website.  
-For example from **www.myname.com** to **www.ispname.com/~myname**  
+For example, from **www.myname.com** to **www.ispname.com/~myname**  
 or from **www.myname.com** to **myname.ispname.com**.
 
 You can do simple redirection with CNAME (alias) DNS records, but this does not work if you need to redirect to a sub-directory (like the first sample above), or if the destination web-server is using virtual hosting (multiple domain names on the same IP address).
@@ -24,7 +24,7 @@ Domain redirection is most often done on a web-server with some type of script.
 
 You can do this with ASP.NET on IIS. The following examples are in VB.NET.
 
-First create a DNS A-records for the domain name pointing to the IIS web-server that will do the redirection (not the destination web-server).
+First, create a DNS A-record for the domain name pointing to the IIS web-server that will do the redirection (not the destination web-server).
 
 Then create a "default.aspx" page on this web-server with the following contents:
 
@@ -42,7 +42,7 @@ End Select
 Add "case" statements for each domain name you want to redirect.  
 You can automate this further with a database containing each domain name and corresponding redirect destination.
 
-On IIS you can also point 404 errors (page not found) to this ASP page so requests for individual pages will also be redirected correctly.
+On IIS you can also point 404 errors (page not found) to this ASP page, so requests for individual pages will also be redirected correctly.
 
 Another variant of this is called "cloaking" - where your domain name still shows in the browser's address bar even after the redirection.  
 This is achieved by "hiding" the redirection in a frame-set where the first frame is zero width or height:

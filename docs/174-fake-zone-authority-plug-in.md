@@ -8,7 +8,7 @@ modified-utc: 2020-01-07
 ---
 # Fake Zone Authority plug-in
 
-This plug-in allows domain names to pass common tests performed by domain name registrars and similar without having to setup an actual zone for each domain name.
+This plug-in allows domain names to pass common tests performed by domain name registrars and similar without having to set up an actual zone for each domain name.
 
 This can be useful, for example, if you have a lot of domain names that are either served by other plug-ins or are inactive.
 
@@ -26,7 +26,7 @@ Responses to requests for NS-record will include one NS-record for each server n
 Enter the e-mail address to be returned in SOA-records.
 - **Additional SOA-record settings**  
 Click this button to specify additional SOA-record settings in the following dialog.  
-Note that these settings are not really going to be used for anything, but some registrars might complain if they are not setup according to their liking. The default settings should satisfy most such tests.  
+Note that these settings are not really going to be used for anything, but some registrars might complain if they are not set up according to their liking. The default settings should satisfy most such tests.  
 ![](img/174/2.png)
 - **DNS Record TTL (Time To Live)**  
 How long the DNS records served may be cached by other DNS servers / caches.

@@ -13,13 +13,13 @@ This tutorial was created using DynDNS Updater version 3.1.0.15.
 
 You can use DynDNS Updater to automatically update DNS records on a remote Simple DNS Plus server - either using the [DynDNS Service plug-in](https://simpledns.plus/plugin-dyndns) or through the [HTTP API](/kb/115/sending-simple-dns-plus-http-commands) directly.  
 This makes it possible to run different services (such as a web-server) on a computer with a dynamic IP address.  
-You can also use this when you need to access roaming computers - for example traveling sales people with laptops.
+You can also use this when you need to access roaming computers - for example, traveling sales people with laptops.
 
 If you use the DynDNS Service plug-in, you must enable the "HTTP - Basic HTTP Authentication" update method in the plug-in configuration.  
 If you use the HTTP API directly, you must configure the HTTP API to listen on an IP address which can be accessed remotely (not the default 127.0.0.1) and set a password - see Simple DNS Plus Options dialog.
 
   
-The first step in configuring DynDNS Updater is to disable DynDNS.org only mode (enables multiple provider support) in the "DynDNS.ini" file. This file is automatically created in the directory where DynDNS Updater is installed the first time the program is run. So run DynDNS Updater, and exit right away as follows:
+The first step in configuring DynDNS Updater is to disable DynDNS.org only mode (enables multiple provider support) in the "DynDNS.ini" file. This file is automatically created in the directory where DynDNS Updater is installed the first time the program is run. So run DynDNS Updater and exit right away as follows:
 
 In the DynDNS Updater Wizard dialog, click the "Cancel" button:
 
@@ -33,12 +33,12 @@ Right-click the tray icon in the Windows notification area and select "Exit" fro
 
 ![](img/126/3.png)
 
-Now open the "DynDNS.ini" file (in the directory where DynDNS Updater is installed) with Notepad, and add the line "IsDynDNS=0" immediately after the [Options] line, save the file, and exit:
+Now open the "DynDNS.ini" file (in the directory where DynDNS Updater is installed) with Notepad and add the line "IsDynDNS=0" immediately after the [Options] line, save the file, and exit:
 
 ![](img/126/4.png)
 
 Next we need to create a custom provider configuration file.  
-Create a new text file (for example using Notepad) with the following contents and save this as "Simple DNS Plus.txt" in the directory where DynDNS Updater is installed:
+Create a new text file (for example, using Notepad) with the following contents and save this as "Simple DNS Plus.txt" in the directory where DynDNS Updater is installed:
 
 For use with the DynDNS Service plug-in:
 
@@ -111,7 +111,7 @@ Once configured, you can test the setup using the "Force Update" button in the D
 
 ![](img/126/11.png)
 
-If everything is setup correctly, the result (see "Log" tab) should look something like this:
+If everything is set up correctly, the result (see "Log" tab) should look something like this:
 
 ![](img/126/12.png)
 

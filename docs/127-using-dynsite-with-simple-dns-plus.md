@@ -9,42 +9,42 @@ modified-utc: 2019-01-01
 # Using DynSite with Simple DNS Plus
 
 > [!NOTE] This article was written before we released the [DynDNS Service plug-in](https://simpledns.plus/plugin-dyndns).  
-> DynSite can also be used with the DynDNS Service plug-in making it even easier to run a DynDNS service
+> DynSite can also be used with the DynDNS Service plug-in, making it even easier to run a DynDNS service
 
 DynSite is a product from Noël Danjou - [http://noeld.com/dynsite.asp](http://noeld.com/dynsite.asp){target=_blank}
 
 You can use DynSite to automatically update DNS records on a remote Simple DNS Plus server. DynSite will update the DNS records each time the IP address changes on the local computer.
 
 This makes it possible to run different services (such as a web-server) on a computer with a dynamic IP address.  
-You can also use this anytime you need to access roaming computers - for example traveling sales people with laptops.
+You can also use this anytime you need to access roaming computers - for example, traveling sales people with laptops.
 
 In the following example, we have a roaming laptop with a dynamic IP address (currently 5.6.7.8) which we want to access using the domain name "laptop.example.com", and we are running a Simple DNS Plus server with the name of "ns1.example.com" on IP address 11.22.33.44 (static).
 
-Step 1: First you need to setup a "example.com" zone that will hold the DNS record for the laptop (the dynamic IP computer). See [this article](/kb/4/basic-dns-server-configuration-example). If you have already setup a zone for your domain name, you can use that.
+Step 1: First, you need to set up an "example.com" zone that will hold the DNS record for the laptop (the dynamic IP computer). See [this article](/kb/4/basic-dns-server-configuration-example). If you have already set up a zone for your domain name, you can use that.
 
-Step 2: Next you need to setup a TSIG key (basically a user name / password pair) for the laptop.
+Step 2: Next, you need to set up a TSIG key (basically a use name / password pair) for the laptop.
 
 In the main window of Simple DNS Plus, click the Options button:
 
 ![](img/127/1.png)
 
-In the Options dialog, under "DNS" select "TSIG Dynamic Updates", and click the "Add..." button:
+In the Options dialog, under "DNS" select "TSIG Dynamic Updates" and click the "Add..." button:
 
 ![](img/127/2.png)
 
 Enter a key name, a key value, and specify which domain(s) the client with this key may update.  
-The key name can be whatever you find convenient - for example the name of the client computer or the person using it.  
+The key name can be whatever you find convenient - for example, the name of the client computer or the person using it.  
 The key value is basically a binary password entered in base64 encoding. You can click the "Generate" button to automatically create a new random value of either 128, 256, or 512 bit length:
 
 ![](img/127/3.png)
 
-When done click the "OK" button, and also click the "OK" button in the previous dialog to save your settings.
+When done, click the "OK" button and also click the "OK" button in the previous dialog to save your settings.
 
 Step 3: Setup DynSite on the laptop.
 
 After installing DynSite, you need to add a new account for the Simple DNS Plus server to it.  
 The first time you run DynSite, the startup wizard eventually takes you to the "Account Assistant".  
-If you are already running DynSite, you can invoke the "Account Assistant" by right clicking on the DynSite tray icon and selecting "Account Assistant" from the pop-up menu:
+If you are already running DynSite, you can invoke the "Account Assistant" by right-clicking on the DynSite tray icon and selecting "Account Assistant" from the pop-up menu:
 
 ![](img/127/4.png)
 
@@ -52,7 +52,7 @@ Click the "Next" button in the first page of the "Account Assistant":
 
 ![](img/127/5.png)
 
-Select server type "DNS Servers", and click the "Next" button:
+Select server type "DNS Servers" and click the "Next" button:
 
 ![](img/127/6.png)
 
@@ -83,7 +83,7 @@ Click the "Next" button, and then the "Finish" button on the following pages:
 
 ![](img/127/11.png)
 
-When everything is setup correctly, DynSite will now update Simple DNS Plus:
+When everything is set up correctly, DynSite will now update Simple DNS Plus:
 
 ![](img/127/12.png)
 

@@ -19,7 +19,7 @@ In CCProxy click the Options button:
 
 ![](img/130/1.png)
 
-Un-check "DNS" and click the "OK" button:
+Uncheck "DNS" and click the "OK" button:
 
 ![](img/130/2.png)
 

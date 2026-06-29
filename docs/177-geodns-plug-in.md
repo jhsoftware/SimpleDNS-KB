@@ -34,11 +34,11 @@ On the "Plug-In Settings" tab, enter the following settings (explained below the
 - **Host name**  
 Enter the host name that you want to provide GeoDNS data for. For example, "www.example.com".  
 IMPORTANT: For the "CNAME" plug-in variant, always use a sub-name (like a "www." prefixed name) for which no other DNS records exist. Never use a zone name (such as "example.com") because the CNAME-record would conflict with the zone's SOA- and NS-records and cause various problems.  
-If you want to allow end-users to enter your web-site address without the www prefix, you should use the "Clone" plug-in variant.
+If you want to allow end-users to enter your website address without the www prefix, you should use the "Clone" plug-in variant.
 - **Data file**  
 Specify the data file to use (see "Data files" below).  
 Click the "..." button to browse the local file system and find the file.  
-Click the "Test" button to get a count of IP address ranges and countries in the file, and to look up IP addresses in it.
+Click the "Test" button to get a count of IP address ranges and countries in the file and to look up IP addresses in it.
 - **Automatically re-load data file when it is updated**  
 When checked, the plug-in will monitor the data file for updates.
 - **Default server alias**  
@@ -84,7 +84,7 @@ Two free options are:
 
 The zip file containing the plug-in (see below) also contains utility programs (`convert-dbip.exe` / `convert-maxmind.exe`) which can convert the IP-to-country data files from these sites into the database format used by the plug-in.
 
-To use these download the data file and run (for example):
+To use these, download the data file and run (for example):
 
 `convert-dbip.exe  dbip-country-lite-2023-03.csv.gz  ipcountry.geodns`
 
