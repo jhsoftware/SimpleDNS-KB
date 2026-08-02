@@ -4,7 +4,7 @@ frontpage: false
 comments: true
 refs: 98,95
 created-utc: 2019-01-01
-modified-utc: 2019-01-01
+modified-utc: 2026-08-03
 ---
 # Setting up Quick Zone Templates
 
@@ -24,12 +24,11 @@ First, pick an existing zone (or make a new one) that you want to use as a templ
 Copy the zone file for that zone to the "Templates" directory.
 
 The location of zone files is configured in the Options dialog / DNS / Data Files section. By default, this is:  
-Windows Vista/2008: C:\ProgramData\JH Software\Simple DNS Plus\ZoneFiles  
-Earlier Windows versions: C:\Documents and Settings\All Users\Application Data\JH Software\Simple DNS Plus\ZoneFiles
+`C:\ProgramData\JH Software\Simple DNS Plus\ZoneFiles`  
 
 The "Templates" directory is found at (create it if it isn't there already):  
-Windows Vista/2008: C:\ProgramData\JH Software\Simple DNS Plus\Templates  
-Earlier Windows versions: C:\Documents and Settings\All Users\Application Data\JH Software\Simple DNS Plus\Templates
+`C:\ProgramData\JH Software\Simple DNS Plus\Templates`
+
 
 ![](img/116/1.png)
 

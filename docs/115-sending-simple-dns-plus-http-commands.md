@@ -4,13 +4,13 @@ frontpage: false
 comments: true
 refs: 85
 created-utc: 2019-01-01
-modified-utc: 2019-01-01
+modified-utc: 2026-08-03
 ---
 # Sending Simple DNS Plus HTTP Commands
 
 Simple DNS Plus can be prompted to perform certain actions through HTTP - either directly from a browser or any other program that can communicate through HTTP.
 
-If you are running Simple DNS Plus 4.00 or later with the default configuration on the same computer that you are currently browsing from, [click here](http://127.0.0.1:8053/){target=_blank} to test with YOUR server (opens http://127.0.0.1:8053).
+If you are running Simple DNS Plus (v. 4.00 or later) with the default configuration on the same computer that you are currently browsing from, [click here](http://127.0.0.1:8053/){target=_blank} to test with YOUR server (opens http://127.0.0.1:8053).
 
 The settings related to this are configured in the Options dialog / HTTP API section:
 
@@ -25,7 +25,7 @@ The following is a simple example of a web-page where a user can enter a host na
 
 Note this code is for demonstration purposes only - appropriate input validation and error checking should be added for this to be used on a real website.
 
-Sample code in: [ASP.NET 2.0](#aspnet), [Classic ASP](#asp), [PHP](#php)
+Sample code in: [ASP.NET 2.0](#aspnet) and [PHP](#php):
 
 ### ASP.NET 2.0{#aspnet}
 
@@ -56,39 +56,6 @@ End Sub
             &lt;asp:Button ID="btnSubmit" runat="server" Text="Submit" /&gt;&lt;br&gt;
             &lt;asp:Label ID="lblResult" runat="server" /&gt;
         &lt;/form&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-```
-
-### Classic ASP{#asp}
-
-The following classic ASP code uses the Windows HTTP Services 5.1 (WinHTTP) COM object to communicate with Simple DNS Plus. WinHTTP 5.1 is part of the Windows operating system for Windows 2000 SP3, Windows XP SP1, and all later Windows versions.  
-To use this sample code, simply copy the code below into notepad, save it with a file name ending with ".asp" in your website folder. The web-server and website must be configured for classic ASP.
-
-```html
-&lt;html&gt;
-    &lt;body&gt;
-        &lt;form method="POST"&gt;
-            Host name: &lt;input type="text" name="hostname"&gt;&lt;br&gt;
-            IP address: &lt;input type="text" name="ipaddr"&gt;&lt;br&gt;
-            &lt;input type=submit&gt;&lt;br&gt;
-        &lt;/form&gt;
-        &lt;%
-        If Request.ServerVariables("HTTP_METHOD")="POST" Then
-            Dim HostName, IPAddr, PostData, HttpReq
-            HostName=Trim(Request.Form("hostname"))
-            IPAddr=Trim(Request.Form("ipaddr"))
-            PostData="host=" &amp; Server.UrlEncode(HostName) &amp; _
-            "&amp;data=" &amp; Server.UrlEncode(IPAddr)
-            Set HttpReq=Server.CreateObject("WinHttp.WinHttpRequest.5.1")
-            HttpReq.open "POST", "http://127.0.0.1:8053/updatehost"
-            '*** un-comment the following line if you have set a password
-            '*** for the HTTP API in the Simple DNS Plus options dialog
-            'HttpReq.SetCredentials "admin", "password", 0
-            HttpReq.send PostData
-            Response.Write Server.HTMLEncode(HttpReq.ResponseText)
-        End If
-        %&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 ```

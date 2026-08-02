@@ -4,7 +4,7 @@ frontpage: false
 comments: true
 refs: 110,148,147
 created-utc: 2019-01-01
-modified-utc: 2021-10-28
+modified-utc: 2026-08-03
 ---
 # HTTP Redirector plug-in
 
@@ -24,8 +24,6 @@ It also allows you to do HTTP redirection in scenarios where a full web-server i
 It can, however, share port 80/443 with IIS (v. 6 and later) running on the same computer, as long as all IIS websites are configured with specific host names or use a different IP address or port number.  
 For those interested in the technical details - this is possible because instead of binding to port 80 directly, the plug-in uses the Windows [HTTP Server API](http://msdn.microsoft.com/en-us/library/aa364510(vs.85).aspx){target=_blank} allowing it to share port 80 with any other applications using the API - including IIS.  
 If the computer running Simple DNS Plus is behind a NAT router or proxy server, you need to "map" port 80/443 TCP from the public Internet IP address to this computer's private IP address.
-
-**IMPORTANT:** This plug-in requires Windows XP SP2 / Windows Server 2003 or later.
 
 In the plug-in instance dialog / Plug-In Settings tab, you can specify the protocols, IP address and ports to listen for HTTP requests on, the default redirect URL, and the host names to redirect:
 

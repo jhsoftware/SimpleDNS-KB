@@ -4,7 +4,7 @@ frontpage: false
 comments: true
 refs: 110
 created-utc: 2019-01-01
-modified-utc: 2020-01-07
+modified-utc: 2026-08-03
 ---
 # DynDNS Service plug-in
 
@@ -107,7 +107,6 @@ To manually set a user to offline status, right-click on the user and select "Se
 
 Other IMPORTANT notes about this plug-in:
 
-- The HTTP-based update methods of the plug-in require Windows XP SP2 / Windows Server 2003 or later.
 - DynDNS client programs that specify a host name to update must use "&lt;user-id&gt;.&lt;host name suffix&gt;".  
 Additional host names specified for a user cannot be used for this.
 - If the plug-in receives an HTTP-based update request which does not specify a client IP address, the plug-in will use the IP address that the HTTP request came from.  

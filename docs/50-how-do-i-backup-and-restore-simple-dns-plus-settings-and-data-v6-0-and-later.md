@@ -6,7 +6,7 @@ vgroup: 4
 vname: v. 6.0 and later
 vsort: 1
 created-utc: 2019-01-01
-modified-utc: 2021-10-07
+modified-utc: 2026-08-03
 ---
 # How do I back up and restore Simple DNS Plus settings and data? (v. 6.0 and later)
 
@@ -14,10 +14,8 @@ modified-utc: 2021-10-07
 
 In Simple DNS Plus v. 6.0 and later, the DNS zones and records, and the different program settings (Options dialog etc.) are all stored in a single database file called "sdnsplus.db" in the Simple DNS Plus application data directory.
 
-On Windows Vista / Server 2008 and later, this location is typically:\
-`C:\ProgramData\JH Software\Simple DNS Plus`\
-On earlier Windows versions:\
-`C:\Documents and Settings\All Users\Application Data\JH Software\Simple DNS Plus`
+This location is typically:\
+`C:\ProgramData\JH Software\Simple DNS Plus`
 
 ### How to back up
 

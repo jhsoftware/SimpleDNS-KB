@@ -7,7 +7,7 @@ vname: IIS 6.0 (Windows XP / Server 2003) and earlier
 vsort: 1
 refs: 145,12
 created-utc: 2019-01-01
-modified-utc: 2019-01-01
+modified-utc: 2026-08-03
 ---
 # Virtual hosting with IIS (Internet Information Services) (IIS 6.0 (Windows XP / Server 2003) and earlier)
 

@@ -2,14 +2,11 @@
 category: 16
 frontpage: false
 comments: true
-vgroup: 2
-vname: IIS 7.0 (Windows Vista / Server 2008) and later
-vsort: 2
 refs: 12
 created-utc: 2019-01-01
-modified-utc: 2019-01-01
+modified-utc: 2026-08-03
 ---
-# Virtual hosting with IIS (Internet Information Services) (IIS 7.0 (Windows Vista / Server 2008) and later)
+# Virtual hosting with IIS (Internet Information Services)
 
 "Virtual hosting" means hosting multiple websites with different domain names on the same IP address.
 

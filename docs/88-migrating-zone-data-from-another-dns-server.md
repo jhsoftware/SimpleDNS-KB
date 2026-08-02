@@ -3,7 +3,7 @@ category: 11
 frontpage: false
 comments: true
 created-utc: 2019-01-01
-modified-utc: 2019-01-01
+modified-utc: 2026-08-03
 ---
 # Migrating zone data from another DNS server
 
@@ -18,7 +18,7 @@ The Import Wizard in Simple DNS Plus can read both the "named.conf" format and t
 
 ### Importing from Microsoft DNS server
 
-Microsoft's DNS server for Windows 2000 Server and later stores individual zones either in standard zone files (typically under 'c:\windows\system32\dns') or in Active Directory.  
+Microsoft's DNS server stores individual zones either in standard zone files (typically under 'c:\windows\system32\dns') or in Active Directory.  
 The boot information (the list of zones to load) is stored in the Windows registry (default) or in a standard boot file.
 
 ### Importing from Microsoft DNS server - No zones stored in Active Directory
@@ -31,9 +31,8 @@ This will generate a standard "Boot" file (again typically under 'c:\windows\sys
 
 Before you can import the DNS zones from such a server, you will first need to export the zones to standard zone files and create a standard boot file listing the zones.
 
-For Windows Server 2003 and later, we have created a tool which can help you do this called "MsDnsExport" - available for download from <https://github.com/jhsoftware/MsDnsExport/releases>. For details on using this tool, please see the README file at <https://github.com/jhsoftware/MsDnsExport>
+We have created a tool which can help you do this called "MsDnsExport" - available for download from <https://github.com/jhsoftware/MsDnsExport/releases>. For details on using this tool, please see the README file at <https://github.com/jhsoftware/MsDnsExport>
 
-With Windows 2000 Server, you need to check the properties of each zone and change zones of type "Active Directory-integrated" to "Standard..." - for each zone, and then configure the server to "load from file" as described above.
 
 ### Using the Import Wizard in Simple DNS Plus
 
