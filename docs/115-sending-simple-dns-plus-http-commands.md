@@ -10,7 +10,7 @@ modified-utc: 2026-08-03
 
 Simple DNS Plus can be prompted to perform certain actions through HTTP - either directly from a browser or any other program that can communicate through HTTP.
 
-If you are running Simple DNS Plus (v. 4.00 or later) with the default configuration on the same computer that you are currently browsing from, [click here](http://127.0.0.1:8053/){target=_blank} to test with YOUR server (opens http://127.0.0.1:8053).
+If you are running Simple DNS Plus with the default configuration on the same computer that you are currently browsing from, [click here](http://127.0.0.1:8053/){target=_blank} to test with YOUR server (opens http://127.0.0.1:8053).
 
 The settings related to this are configured in the Options dialog / HTTP API section:
 
@@ -21,78 +21,76 @@ By default, it listens on IP 127.0.0.1 which means that connections can only be 
 
 The different "commands" that Simple DNS Plus can accept through the HTTP API are listed and described in the help file "How to use the HTTP API" section. See [on-line version](https://simpledns.plus/helplink?p=ht_http).
 
-The following is a simple example of a web-page where a user can enter a host name and an IP address, and server side code that sends this data to Simple DNS Plus behind the scenes to create/update the A-record for the entered host name. This could be used as a simple dynamic DNS service.
+The following are simple examples of program code that creates/updates a DNS A-record (host name = IP address).
 
-Note this code is for demonstration purposes only - appropriate input validation and error checking should be added for this to be used on a real website.
+Sample code in [JavaScript](#js), [Python](#python), and [C#](#cs):
 
-Sample code in: [ASP.NET 2.0](#aspnet) and [PHP](#php):
+### JavaScript{#js}
 
-### ASP.NET 2.0{#aspnet}
+To use this sample code, simply copy the code below into notepad, save it as "test.mjs", and run it by typing `node test.mjs` at a command prompt.  
+(Requires [Node.js](https://nodejs.org) v. 18 or later).
 
-To use this sample code, simply copy the code below into notepad, save it with a file name ending with ".aspx" in your website folder. The web-server and website must be configured for ASP.NET 2.0.
+```javascript
+let HostName="test.example.com";
+let IPAddr="1.2.3.4";
 
-```html
-<%@ Page Language="VB" %>
-&lt;script runat="server"&gt;
-Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
-    If Not Page.IsPostBack Then Exit Sub
-    Dim HostName, IPAddr, PostData As String
-    HostName = txtHostName.Text.Trim
-    IPAddr = txtIPAddr.Text.Trim
-    PostData = "host=" &amp; Server.UrlEncode(HostName) &amp; _
-    "&amp;data=" &amp; Server.UrlEncode(IPAddr)
-    Dim wc As New System.Net.WebClient()
-    '*** un-comment the following line if you have set a password
-    '*** for the HTTP API in the Simple DNS Plus options dialog
-    'wc.Credentials = New System.Net.NetworkCredential("admin", "password")
-    lblResult.Text = wc.UploadString("http://127.0.0.1:8053/updatehost", PostData)
-End Sub
-&lt;/script&gt;
-&lt;html&gt;
-    &lt;body&gt;
-        &lt;form id="form1" runat="server"&gt;
-            Host name: &lt;asp:TextBox ID="txtHostName" runat="server" /&gt;&lt;br&gt;
-            IP address: &lt;asp:TextBox ID="txtIPAddr" runat="server" /&gt;&lt;br&gt;
-            &lt;asp:Button ID="btnSubmit" runat="server" Text="Submit" /&gt;&lt;br&gt;
-            &lt;asp:Label ID="lblResult" runat="server" /&gt;
-        &lt;/form&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+const SdnsApiUrl="http://127.0.0.1:8053";
+let r=await fetch(SdnsApiUrl +"/updatehost"+
+  "?name=" + encodeURIComponent(HostName)+
+  "&ip=" + encodeURIComponent(IPAddr), {
+  method:"POST",
+  // Un-comment the following line if you have enabled basic authentication for the HTTP API
+  //headers: new Headers({"Authorization": `Basic ${btoa("userid:password")}`})
+  });
+if(r.ok){
+  console.log("OK");
+} else {
+  console.log("Status: "+r.status + " " + r.statusText);
+  console.log(await r.text());
+}
 ```
 
-### PHP{#php}
 
-The following PHP code uses the cURL library to communicate with Simple DNS Plus. cURL is typically installed with PHP and included with the full PHP distribution.  
-To use this sample code, simply copy the code below into notepad, save it with a file name ending with ".php" in your website folder. The web-server and website must be configured for PHP.
+### Python{#python}
 
-```html
-<html>
-&lt;body&gt;
-&lt;form method="POST"&gt;
-Host name: &lt;input type="text" name="hostname"&gt;&lt;br&gt;
-IP address: &lt;input type="text" name="ipaddr"&gt;&lt;br&gt;
-&lt;input type=submit&gt;&lt;br&gt;
-&lt;/form&gt;
-&lt;?php
-if(isset($_POST["hostname"]) || isset($_POST["ipaddr"])){
-$hostname = urlencode(trim($_POST["hostname"]));
-$ipaddr = urlencode(trim($_POST["ipaddr"]));
-$postdata = "host=$hostname&amp;data=$ipaddr";
-$url = "http://127.0.0.1:8053/updatehost";
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_HEADER, 0);
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
-//*** un-comment the following line if you have set a password
-//*** for the HTTP API in the Simple DNS Plus options dialog
-//curl_setopt($ch, CURLOPT_USERPWD, "admin:password");
-$result = curl_exec($ch); 
-curl_close($ch);
-print $result;
-}
-?&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+To use this sample code, simply copy the code below into notepad, save it as "test.py", and run it by typing `py test.py` at a command prompt.  
+(Requires [Python](https://python.org) with "py launcher" and the "requests" package installed).
+
+```python
+import requests
+
+HostName="test.example.com"
+IPAddr="1.2.3.14"
+SdnsApiUrl="http://127.0.0.1:8053"
+
+r = requests.post(SdnsApiUrl+"/updatehost?name=" + HostName + "&ip="+IPAddr)
+# Comment the previous line and un-comment the following line if you have enabled basic authentication for the HTTP API
+# r = requests.post(SdnsApiUrl+"/updatehost?name=" + HostName + "&ip="+IPAddr, auth = ('userid', 'password'))
+
+if r.ok:
+  print("OK")
+else:
+  print("Error")
+```
+
+### C#{#cs}
+
+To use this sample code, simply copy the code below into notepad, save it as "test.cs", and run it by typing `dotnet run test.cs` at a command prompt.  
+(Requires [.NET](https://dotnet.microsoft.com) v. 10 or later installed).
+
+```csharp
+var HostName="test.example.com";
+var IPAddr="1.2.3.4";
+
+var SdnsApiUrl="http://127.0.0.1:8053";
+
+var req = new HttpRequestMessage(HttpMethod.Post, SdnsApiUrl + "/updatehost" +
+   "?name=" + HostName +
+   "&ip=" + IPAddr);
+// Un-comment the following line if you have enabled basic authentication for the HTTP API
+// req.Headers.Authorization = new("Basic",Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes("userid:password")));
+var hc = new HttpClient();
+var r=hc.Send(req);
+
+Console.WriteLine(r.IsSuccessStatusCode ? "OK" : "Error: " + r.StatusCode); 
 ```
