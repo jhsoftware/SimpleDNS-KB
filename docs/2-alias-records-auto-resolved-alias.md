@@ -3,7 +3,7 @@ category: 5
 frontpage: false
 comments: true
 created-utc: 2019-01-01
-modified-utc: 2019-01-01
+modified-utc: 2026-09-29
 ---
 # ALIAS-records (Auto Resolved Alias)
 
@@ -53,7 +53,6 @@ ALIAS-records are similar to CNAME-records. The difference is that ALIAS-records
 
 *   **Secondary DNS servers**  
     ALIAS-records may not be served correctly if secondary DNS servers for the containing zone are not running Simple DNS Plus v. 5.3 or later.  
-    If you don't run your own secondary DNS servers - consider using [ns2service.net](https://ns2service.net) - which is based on Simple DNS Plus and fully supports these ALIAS-records.  
 
 *   **CDNs**  
     Global CDNs (Content Delivery Networks) typically use the IP address of the DNS resolver to determine the delivery node closest to the client. If you point an ALIAS-record to the host name of such a CDN (not recommended), Simple DNS Plus in effect becomes the resolver and so all your clients will be served by the node closest to Simple DNS Plus - which is not necessarily closest to each client.  
