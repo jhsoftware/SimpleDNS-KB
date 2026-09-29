@@ -7,7 +7,7 @@ modified-utc: 2019-01-01
 ---
 # Does Simple DNS Plus support Active Directory?
 
-> [!NOTE] Windows Server 2008 R2 has a bug which causes a "Bad DNS Packet" error when trying to setup Active Directory with Simple DNS Plus - for details and fix [click here](https://simpledns.plus/news/10).
+> [!NOTE] Windows Server 2008 R2 has a bug which causes a "Bad DNS Packet" error when trying to set up Active Directory with Simple DNS Plus - for details and fix [click here](https://simpledns.plus/news/10).
 
 Yes, Simple DNS Plus supports both the "SRV" record type (required for AD) and "dynamic updates" (makes configuration with AD much easier).
 

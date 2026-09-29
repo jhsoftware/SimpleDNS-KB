@@ -35,7 +35,7 @@ In this case, you can use the [Fixed IP Address](https://simpledns.plus/plugin-f
 
 Assuming that you have configured a normal DNS zone with your public DNS records, you can override these records individually for requests coming from your LAN using this plug-in.
 
-For example, to point "www.example.com" to 192.168.0.21 for users from 192.168.0.xxx (your LAN) only, you could setup a Fixed IP Address plug-in as follows:
+For example, to point "www.example.com" to 192.168.0.21 for users from 192.168.0.xxx (your LAN) only, you could set up a Fixed IP Address plug-in as follows:
 
 From the main window, click the "Plug-ins" button:
 

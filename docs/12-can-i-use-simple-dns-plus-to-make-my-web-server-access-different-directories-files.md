@@ -17,7 +17,7 @@ The Domain Name is used to locate the IP address of the web server (through DNS)
 The Path/File is sent to the web server as part of the http request.
 
 When a browser opens a web-page, it first locates the web server's IP address through DNS. This DNS request only contains the Domain Name - not the Path/File.  
-Second, it connects to the web server and sends a HTTP request, which includes both the Domain Name and Path/File.
+Second, it connects to the web server and sends an HTTP request, which includes both the Domain Name and Path/File.
 
 If the web server supports different domain names, it then serves the page from a directory according to the domain name supplied in the request.
 

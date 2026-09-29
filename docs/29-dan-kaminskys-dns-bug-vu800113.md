@@ -41,7 +41,7 @@ If you allow recursion (from any IP), make sure "port randomization" is enabled 
 
 Several on-line tests are available to test a DNS server's "port randomization" feature (or lack of it).  
 For example [DNSStuff.com](http://member.dnsstuff.com/tools/vu800113.php){target=_blank} and [DNS OARC](https://www.dns-oarc.net/oarc/services/dnsentropy){target=_blank}.  
-Test results with the later against Simple DNS Plus (v. 5.1 build 106 and later) should look like this:
+Test results with the latter against Simple DNS Plus (v. 5.1 build 106 and later) should look like this:
 
 ![](img/29/2.png)
 

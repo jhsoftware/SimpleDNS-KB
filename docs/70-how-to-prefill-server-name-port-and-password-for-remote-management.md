@@ -15,7 +15,7 @@ First, right-click on your Windows desktop, and from the pop-up menu select "New
 
 ![](img/70/1.png)
 
-In the "Create Shiortcut" dialog, click the "Browse" button and locate the "sdnsgui.exe" file in the directory where Simple DNS Plus is installed (typically c:\program files\Simple DNS Plus):
+In the "Create Shortcut" dialog, click the "Browse" button and locate the "sdnsgui.exe" file in the directory where Simple DNS Plus is installed (typically c:\program files\Simple DNS Plus):
 
 ![](img/70/2.png)
 
@@ -28,7 +28,7 @@ Click the "Next" button and enter a name for the shortcut (for example, the name
 
 ![](img/70/4.png)
 
-Cilck the "Finish" button, and the shortcut is ready to use:
+Click the "Finish" button, and the shortcut is ready to use:
 
 ![](img/70/5.png)
 

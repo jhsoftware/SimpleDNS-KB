@@ -23,7 +23,7 @@ New features / updates in v. 9.0:
 
 DNS clients (like end user devices) can now send DNS queries to Simple DNS Plus via two new protocols - DNS over TLS (DoT) and DNS over HTTPS (DoH).
 
-Classic DNS queries (UDP/TCP) are sent in plain text, which means anyone "listening" to the network can read them. This is a privacy issue, especially on the first leg between the user device and the resolving DNS server (think coffee shop wifi hotspot).
+Classic DNS queries (UDP/TCP) are sent in plain text, which means anyone "listening" to the network can read them. This is a privacy issue, especially on the first leg between the user device and the resolving DNS server (think coffee shop Wi-Fi hotspot).
 
 DNS over TLS (DoT) and DNS over HTTPS (DoH) encrypt DNS queries and responses - to keep user data private and secure.
 
@@ -37,7 +37,7 @@ Operating systems and browsers have recently implemented support for this as wel
 See how to enable: [Windows 11](/kb/199) / [Windows Server 2022](/kb/200).
 
 - **MacOS** 11+ (BigSur) and **IOS** 14+ support both DoT and DoH.\
-See how to enable: [MacOS](/kb/201) / [IOS](/kb/202).
+See how to enable: [macOS](/kb/201) / [IOS](/kb/202).
 
 - **Android** v. 9+ supports DoT.\
 See how to enable: [Android](/kb/198)
@@ -46,7 +46,7 @@ See how to enable: [Android](/kb/198)
 
 - Some **Browsers** support DoH independently of the operating system (also works on earlier versions of Windows).\
 See how to enable: [Chrome](/kb/195) / [Firefox](/kb/197) / [Edge](/kb/196).\
-Note: Safari (on MacOS and IOS) does not have such a setting, but DoT/DoH can be enabled in these operating systems (see above).
+Note: Safari (on macOS and IOS) does not have such a setting, but DoT/DoH can be enabled in these operating systems (see above).
 
 
 In the Simple DNS Plus Options dialog, in the "DNS / Inbound requests" section, there is now a list of protocols / interfaces that Simple DNS Plus listens for DNS requests via / on.
@@ -85,7 +85,7 @@ DoT (DNS over TLS) requests are served directly (not via the Windows HTTP Server
 
 If you are not running an SSL website with IIS on the same computer (see above), or if you are using a different SSL/TLS certificate for DoH (DNS over HTTPS) or the HTTP API, you will need to "bind" an SSL/TLS certificate to the host name (and port) used.
 
-This can be done with a command line ("netsh http add sslcert hostnameport:..."), but requires first obtaining the "thumb print" ID of the certificate.
+This can be done with a command line ("netsh http add sslcert hostnameport:..."), but requires first obtaining the "thumbprint" ID of the certificate.
 
 To make this a bit easier, we have added a helper dialog for this, which lets you simply pick the certificate from a drop-down list.
 
@@ -99,7 +99,7 @@ Clicking this button will bring up the following dialog:
 
 HTTPS-records allow browsers to efficiently obtain complete instructions for accessing a website for a domain name - including supported protocols (HTTP/1.1, 2, 3, etc.), ip address(es), port number, and public keys (all optional) - saving the browser from doing a number of DNS lookups and other protocol negotiation steps.
 
-The Safari browser (on MacOS/IOS) has supported and requested this record type for a while now, and this appears to be [coming soon in Chrome](https://docs.google.com/document/d/1RX7LsepbdTrrvfKCIH104qZyhU0jo9ZN9meTAGHufSU/edit#heading=h.7nki9mck5t64) too.
+The Safari browser (on macOS/IOS) has supported and requested this record type for a while now, and this appears to be [coming soon in Chrome](https://docs.google.com/document/d/1RX7LsepbdTrrvfKCIH104qZyhU0jo9ZN9meTAGHufSU/edit#heading=h.7nki9mck5t64) too.
 
 The HTTPS record-type is defined in a ["Service binding and parameter specification via the DNS (DNS SVCB and HTTPS RRs)" draft](https://datatracker.ietf.org/doc/draft-ietf-dnsop-svcb-https) expected to become an official RFC soon.
 

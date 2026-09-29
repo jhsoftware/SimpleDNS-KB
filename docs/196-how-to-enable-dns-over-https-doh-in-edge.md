@@ -15,7 +15,7 @@ To enable this in Edge, do the following:
 - Select "Settings...". 
 - Click "Privacy, search and services" in the right side panel.
 - Scroll down to the "Security" section.
-- Click the "Use secure DNS to specify how to lookup the network address for websites" switch to enable.
+- Click the "Use secure DNS to specify how to look up the network address for websites" switch to enable.
 - Here you can specify your DNS provider / enter a DoH query URL:
 
 ![](img/196/doh-edge.png)

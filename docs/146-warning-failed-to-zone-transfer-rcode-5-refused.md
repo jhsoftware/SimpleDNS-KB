@@ -22,7 +22,7 @@ Next, make sure that the primary server allows the IP address of the secondary s
 You can configure which local IP address is used for outbound requests (including zone transfer requests) in the Options dialog / DNS / Outbound Requests section.  
 You can check which IP address zone transfer requests originate from simply by looking in the Simple DNS Plus log on the primary server.
 
-On a Simple DNS Plus primary server, there are 3 different settings which can affect zone transfer requests beeing allowed or not:
+On a Simple DNS Plus primary server, there are 3 different settings which can affect zone transfer requests being allowed or not:
 
 1) Options dialog / DNS / Zone Transfers:
 

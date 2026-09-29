@@ -54,7 +54,7 @@ The service name for the second instance is `SDNSPLUS_<instance ID>` where `<ins
 For example if the instance ID is "LAN", you can start the service from a command prompt with "NET START SDNSPLUS_LAN"  
 The instance ID will also be part of the service description in the Windows Services list.
 
-Simple DNS Plus configuration files for the second instance will be stored in a sub-directory of the application data directory
+Simple DNS Plus configuration files for the second instance will be stored in a subdirectory of the application data directory
 `C:\ProgramData\JH Software\Simple DNS Plus\<instance ID>\`  
 
 > [!Note]

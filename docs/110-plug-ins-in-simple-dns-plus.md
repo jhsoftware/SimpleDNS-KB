@@ -72,7 +72,7 @@ Available "rules" are:
 	- is listed in another plug-in
 - Sender requests recursion (RD)
 - Server offers recursion (RA)
-- Server is authroritative (AA) (Note: this only works for plug-ins listed AFTER [LOCAL DNS ZONES])
+- Server is authoritative (AA) (Note: this only works for plug-ins listed AFTER [LOCAL DNS ZONES])
 - Date/time is (see [this article](/kb/72))
 - Rule from plug-in
 - Sublist of rules

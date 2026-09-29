@@ -40,7 +40,7 @@ Click the "Add" button, then "Rule from plug-in", then "GeoDNS (IP)1", then "Req
 
 ![](img/6/6.png)
 
-Enter the 2 letter ISO code for the country that you wish to block requests from (for example "NL" for the Netherlands):
+Enter the 2-letter ISO code for the country that you wish to block requests from (for example "NL" for the Netherlands):
 
 ![](img/6/7.png)
 

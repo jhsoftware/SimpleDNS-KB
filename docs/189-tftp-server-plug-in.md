@@ -46,7 +46,7 @@ The Simple DNS Plus log (Active Log View and log files) will show the request:
 
 ![](img/189/3.png)
 
-IMPORTANT: TFTP has no built-in security (authentication or otherwise). Anyone who can access the server's IP address / UDP port 69 can download all the files in the data folder and sub-directories.  
+IMPORTANT: TFTP has no built-in security (authentication or otherwise). Anyone who can access the server's IP address / UDP port 69 can download all the files in the data folder and subdirectories.  
 We recommend that you limit access with a firewall or enable the plug-in only on private IP addresses.  
 This plug-in does not support writes/uploads, so there is no risk of new files being uploaded or existing files being altered.
 

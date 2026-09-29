@@ -45,12 +45,12 @@ When using the Auto SPF plug-in, make sure that the automatic SPF-record data is
 
 Note that the default Auto SPF plug-in record data "v=spf1 mx -all" will fail such a test if no MX-record exists for your HELO/EHLO name.  
 For example, if your domain name is "example.com" and your mail server is named "mail.example.com" (and uses this in HELO/EHLO greetings), you would probably only have an MX-record for "example.com" - not for "mail.example.com", and therefore "v=spf1 mx -all" fails to validate "mail.example.com".<br />
-Instead you could use "v=spf1 ip4:1.2.3.4 -all" (where 1.2.3.4 is the IP address of your mail server), which would work for both types of tests.
+Instead, you could use "v=spf1 ip4:1.2.3.4 -all" (where 1.2.3.4 is the IP address of your mail server), which would work for both types of tests.
 
 ### The DNS SPF-record type (numeric 99):
 
 In 2006 a new DNS record type "SPF" (numeric ID 99) was introduced through RFC4408. This record type (and RFC) was made obsolete in 2014 through RFC7372.  
-Since the introduction of the SPF concept, it has always been valid and correct to publish SPF data using DNS TXT-records. Between 2006 and 2014 both record types (TXT / SPF) were valid and correct. However now only TXT-records should be used.  
+Since the introduction of the SPF concept, it has always been valid and correct to publish SPF data using DNS TXT-records. Between 2006 and 2014 both record types (TXT / SPF) were valid and correct. However, now only TXT-records should be used.  
 All e-mail servers that we know of support SPF through DNS TXT-records.  
 Therefore, the DNS "SPF" record type (99) was removed from Simple DNS Plus in v. 5.3.
 

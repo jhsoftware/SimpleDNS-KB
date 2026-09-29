@@ -10,7 +10,7 @@ modified-utc: 2023-09-29
 
 Plug-ins can be developed in any .NET Framework 4.8 programming language, including Visual Basic.NET and C#.
 
-The standard Simple DNS Plus installation includes the "sdnscommon.dll" file (and "sdnscommon.xml" file to provide Visual Studio intellisense) in the main installation directory.
+The standard Simple DNS Plus installation includes the "sdnscommon.dll" file (and "sdnscommon.xml" file to provide Visual Studio IntelliSense) in the main installation directory.
 
 To create your own plug-in for Simple DNS Plus, create a .NET 4.8 library (.dll file) that references "sdnscommon.dll" with a public class that implements one of the following 8 interfaces (ILookupHost, ILookupReverse, and ILookupTXT can be combined - the rest cannot):
 

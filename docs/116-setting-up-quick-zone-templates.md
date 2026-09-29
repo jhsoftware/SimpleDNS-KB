@@ -253,7 +253,7 @@ No, simply leave it to Simple DNS Plus to ask for the IP address and add an A-re
     <tr>
         <td>defDefaultTTL</td>
         <td>Integer</td>
-        <td>The default "Defaut TTL" (see "Default Zone Values" dialog) </td>
+        <td>The default "Default TTL" (see "Default Zone Values" dialog) </td>
     </tr>
     <tr>
         <td>ZoneName</td>

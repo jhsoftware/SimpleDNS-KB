@@ -64,7 +64,7 @@ In the "DynDNS client update methods" dialog, you can enable different client up
 - **DNS - TSIG signed dynamic updates**  
 Secure updates received directly through the DNS protocol (RFC2136 / 2845) on the IP address and port that Simple DNS plus listens on (see Options dialog / DNS / Inbound Requests section).  
 Unfortunately, this method is only supported by a few client programs (examples [DynSite](http://noeld.com/dynsite.asp){target=_blank} and [DirectUpdate](http://www.directupdate.net/){target=_blank}).  
-Also note that server and client clocks must be synchronized to within a few minutes. This is usually not a problem since recent operating systems automatically synchronize clocks with an Internet time server.
+Also note that server and client clocks must be synchronized to within a few minutes. This is usually not a problem since recent operating systems automatically synchronize clocks with an Internet time-server.
 - **GnuDIP direct TCP protocol**  
 Secure updates through a TCP connection (usually to port 3495) using the [GnuDIP direct TCP protocol](http://gnudip2.sourceforge.net/gnudip-www/latest/gnudip/html/protocol.html){target=_blank}.  
 For a list of client programs that support this update method [click here](http://gnudip2.sourceforge.net/gnudip-www/latest/gnudip/html/clients.html){target=_blank}.

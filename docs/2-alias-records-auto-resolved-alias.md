@@ -7,7 +7,7 @@ modified-utc: 2026-09-29
 ---
 # ALIAS-records (Auto Resolved Alias)
 
-ALIAS-records (in Simple DNS Plus v. 5.3 and later) are virtual alias records resolved by Simple DNS Plus at at the time of each request - providing "flattened" (no CNAME-record chain) synthesized records with data from a hidden source name.
+ALIAS-records (in Simple DNS Plus v. 5.3 and later) are virtual alias records resolved by Simple DNS Plus at the time of each request - providing "flattened" (no CNAME-record chain) synthesized records with data from a hidden source name.
 
 This can be used for different purposes - including solving the classic problem with CNAME-records at the domain apex (for the zone name / for "the naked domain").
 

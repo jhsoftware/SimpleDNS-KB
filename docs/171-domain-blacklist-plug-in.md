@@ -43,7 +43,7 @@ M - exact-match entry. Unlimited entries per file.
 E - ends-with-domain entry. Unlimited entries per file.  
 R - regular expression ([about](http://en.wikipedia.org/wiki/regular_expression){target=_blank}) entry. Unlimited entries per file (*).
 
-The domain name of exact-match (M) entries can start with a wildcard character (*.example.com) meaning "all sub-domains". The wildcard character can only be used as the first character and only when immediately followed by a period(.) and a host name. The difference between an ends-with-domain (E) entry and a wildcard exact-match entry (M *...) is that E entries match the domain name itself, whereas M entries do not (only sub-domains).
+The domain name of exact-match (M) entries can start with a wildcard character (*.example.com) meaning "all subdomains". The wildcard character can only be used as the first character and only when immediately followed by a period(.) and a host name. The difference between an ends-with-domain (E) entry and a wildcard exact-match entry (M *...) is that E entries match the domain name itself, whereas M entries do not (only subdomains).
 
 M, E, and R entries can be prefixed with an exclamation character (!) to indicate an exception (do not block).  
 Exception entries are always evaluated first and override all other entries.
