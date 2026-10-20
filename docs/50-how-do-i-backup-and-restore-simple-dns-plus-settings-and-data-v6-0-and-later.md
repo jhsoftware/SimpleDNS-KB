@@ -27,6 +27,8 @@ For example:
 
 `sdnsplus.exe  -b  "c:\my backups\sdnsplus.db"`
 
+> [!Note] The backup operation is performed by the Simple DNS Plus service (usually running as the local System account). Make sure to back up to a location that the service account has access to. Services typically do NOT have access to network drives.
+
 ### How to restore - all data
 
 To later restore this on a new or reinstalled computer, simply install a fresh copy of Simple DNS Plus, and copy the backup file to the Simple DNS Plus application data directory as "sdnsplus.db".
